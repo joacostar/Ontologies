@@ -1,0 +1,1337 @@
+@prefix : <https://w3id.org/utoronto/ontologies/BuildingComponents#> .
+@prefix bc: <https://w3id.org/utoronto/ontologies/BuildingComponents#> .
+@prefix om2: <http://www.ontology-of-units-of-measure.org/resource/om-2/subset/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicm: <https://w3id.org/digitalconstruction/0.5/Materials/Subset#> .
+@prefix prod: <https://w3id.org/product#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/utoronto/ontologies/BuildingComponents#> .
+
+<https://w3id.org/utoronto/ontologies/BuildingComponents> rdf:type owl:Ontology ;
+                                                           owl:imports <http://www.ontology-of-units-of-measure.org/resource/om-2/subset> ,
+                                                                       <https://w3id.org/digitalconstruction/0.5/Materials/Subset> ,
+                                                                       prod:BuildingElements ,
+                                                                       prod:Furnishing ,
+                                                                       prod:MEP .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute
+bc:hasAttribute rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( bc:BuildingComponent
+                                            bc:BuildingComponentType
+                                          )
+                            ] ;
+                rdfs:range bc:ComponentAttribute .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasComponent
+bc:hasComponent rdf:type owl:ObjectProperty ;
+                owl:inverseOf bc:isComponentOf ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain bc:BuildingProduct .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasFrame
+bc:hasFrame rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasInfill
+bc:hasInfill rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasQuantity
+bc:hasQuantity rdf:type owl:ObjectProperty ;
+               rdfs:domain bc:ComponentAttribute ;
+               rdfs:range bc:Quantity .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasSealant
+bc:hasSealant rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasSupport
+bc:hasSupport rdf:type owl:ObjectProperty ;
+              rdfs:domain bc:BuildingComponent ;
+              rdfs:range bc:Restraint .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasUnit
+bc:hasUnit rdf:type owl:ObjectProperty ;
+           rdfs:domain bc:Quantity ;
+           rdfs:range bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isComponentOf
+bc:isComponentOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isInSystemOfType
+bc:isInSystemOfType rdf:type owl:ObjectProperty ;
+                    rdfs:domain bc:BuildingComponent ;
+                    rdfs:range bc:MepSystemType .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasAspectRatio
+bc:hasAspectRatio rdf:type owl:DatatypeProperty ;
+                  rdfs:domain bc:BuildingComponent ;
+                  rdfs:range xsd:double .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasDouble
+bc:hasDouble rdf:type owl:DatatypeProperty ;
+             rdfs:domain bc:Quantity ;
+             rdfs:range xsd:double .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isAboveGround
+bc:isAboveGround rdf:type owl:DatatypeProperty ;
+                 rdfs:domain bc:BuildingComponent ;
+                 rdfs:range xsd:boolean ;
+                 owl:propertyDisjointWith bc:isBelowGround .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isBelowGround
+bc:isBelowGround rdf:type owl:DatatypeProperty ;
+                 rdfs:domain bc:BuildingComponent ;
+                 rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isExternal
+bc:isExternal rdf:type owl:DatatypeProperty ;
+              rdfs:domain bc:BuildingComponent ;
+              rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isInternal
+bc:isInternal rdf:type owl:DatatypeProperty ;
+              rdfs:domain bc:BuildingComponent ;
+              rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isLoadBearing
+bc:isLoadBearing rdf:type owl:DatatypeProperty ;
+                 rdfs:domain bc:BuildingComponent ;
+                 rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isMonolithic
+bc:isMonolithic rdf:type owl:DatatypeProperty ;
+                rdfs:domain bc:BuildingComponent ;
+                rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Diameter
+om2:Diameter rdf:type owl:Class .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Thickness
+om2:Thickness rdf:type owl:Class .
+
+
+###  https://w3id.org/product#AirCompressor
+prod:AirCompressor rdf:type owl:Class ;
+                   rdfs:subClassOf prod:Product ,
+                                   bc:AirDistributionComponent ,
+                                   bc:BuildingComponent ;
+                   rdfs:label "AirCompressor"@en .
+
+
+###  https://w3id.org/product#AirHandlingUnit
+prod:AirHandlingUnit rdf:type owl:Class ;
+                     rdfs:subClassOf prod:Product ,
+                                     bc:AirDistributionComponent ,
+                                     bc:BuildingComponent ;
+                     rdfs:label "AirHandlingUnit"@en .
+
+
+###  https://w3id.org/product#AnnealedGlassPanel
+prod:AnnealedGlassPanel rdf:type owl:Class ;
+                        rdfs:subClassOf prod:GlassPanel ;
+                        rdfs:label "Annealed Glass Panel" .
+
+
+###  https://w3id.org/product#BatteryCharger
+prod:BatteryCharger rdf:type owl:Class ;
+                    rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                    prod:ElectricityEmergencyComponent ,
+                                    prod:Product ,
+                                    bc:BuildingComponent ;
+                    rdfs:label "BatteryCharger"@en .
+
+
+###  https://w3id.org/product#BatteryRack
+prod:BatteryRack rdf:type owl:Class ;
+                 rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                 prod:ElectricityEmergencyComponent ,
+                                 prod:Product ,
+                                 bc:BuildingComponent ;
+                 rdfs:label "BatteryRack"@en .
+
+
+###  https://w3id.org/product#Beam
+prod:Beam rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#BeamToColumnConnection
+prod:BeamToColumnConnection rdf:type owl:Class ;
+                            rdfs:subClassOf prod:Connection ;
+                            rdfs:label "BeamToColumnConnection"@en .
+
+
+###  https://w3id.org/product#Brace
+prod:Brace rdf:type owl:Class ;
+           rdfs:subClassOf prod:Product ,
+                           bc:BuildingComponent ;
+           rdfs:label "Brace"@en .
+
+
+###  https://w3id.org/product#Ceiling
+prod:Ceiling rdf:type owl:Class ;
+             rdfs:subClassOf prod:Product ;
+             rdfs:label "Ceiling"@en .
+
+
+###  https://w3id.org/product#Chair
+prod:Chair rdfs:subClassOf prod:Furniture ,
+                           prod:MovableFurnishing ,
+                           bc:Furnishing .
+
+
+###  https://w3id.org/product#Chiller
+prod:Chiller rdf:type owl:Class ;
+             rdfs:subClassOf prod:Product ,
+                             bc:BuildingComponent ;
+             rdfs:label "Chiller"@en .
+
+
+###  https://w3id.org/product#Chimney
+prod:Chimney rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Closet
+prod:Closet rdfs:subClassOf prod:Furnishing ,
+                            prod:Furniture ,
+                            bc:Furnishing .
+
+
+###  https://w3id.org/product#Coil
+prod:Coil rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#Column
+prod:Column rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#ColumnCovering
+prod:ColumnCovering rdf:type owl:Class ;
+                    rdfs:subClassOf prod:Covering .
+
+
+###  https://w3id.org/product#ColumnSplice
+prod:ColumnSplice rdf:type owl:Class ;
+                  rdfs:subClassOf prod:Connection ;
+                  rdfs:label "ColumnSplice"@en .
+
+
+###  https://w3id.org/product#Connection
+prod:Connection rdf:type owl:Class ;
+                rdfs:subClassOf prod:Product ,
+                                bc:BuildingComponent ;
+                rdfs:label "Connection"@en .
+
+
+###  https://w3id.org/product#ControlPanel
+prod:ControlPanel rdf:type owl:Class ;
+                  rdfs:subClassOf prod:Product ,
+                                  bc:BuildingComponent ;
+                  rdfs:label "ControlPanel"@en .
+
+
+###  https://w3id.org/product#CoolingTower
+prod:CoolingTower rdf:type owl:Class ;
+                  rdfs:subClassOf prod:Product ,
+                                  bc:BuildingComponent ;
+                  rdfs:label "CoolingTower"@en .
+
+
+###  https://w3id.org/product#Couch
+prod:Couch rdfs:subClassOf prod:Furniture ,
+                           prod:MovableFurnishing ,
+                           bc:Furnishing .
+
+
+###  https://w3id.org/product#Covering
+prod:Covering rdf:type owl:Class ;
+              rdfs:subClassOf prod:Product ;
+              rdfs:label "Covering"@en .
+
+
+###  https://w3id.org/product#CurtainWall
+prod:CurtainWall rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Damper
+prod:Damper rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#DieselGenerator
+prod:DieselGenerator rdf:type owl:Class ;
+                     rdfs:subClassOf prod:MotorGenerator ;
+                     rdfs:label "DieselGenerator"@en .
+
+
+###  https://w3id.org/product#Difusser
+prod:Difusser rdf:type owl:Class ;
+              rdfs:subClassOf prod:Product ,
+                              bc:AirDistributionComponent ,
+                              bc:BuildingComponent ;
+              rdfs:label "Difusser"@en .
+
+
+###  https://w3id.org/product#DistributionPanel
+prod:DistributionPanel rdf:type owl:Class ;
+                       rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                       prod:Product ,
+                                       bc:BuildingComponent ;
+                       rdfs:label "DistributionPanel"@en .
+
+
+###  https://w3id.org/product#Door
+prod:Door rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#DrySealant
+prod:DrySealant rdf:type owl:Class ;
+                rdfs:subClassOf prod:Sealant .
+
+
+###  https://w3id.org/product#Duct
+prod:Duct rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#DuctTransition
+prod:DuctTransition rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#ElectricityDistributionComponent
+prod:ElectricityDistributionComponent rdf:type owl:Class ;
+                                      rdfs:subClassOf prod:Product ,
+                                                      bc:BuildingComponent ;
+                                      rdfs:label "ElectricityDistributionComponent"@en .
+
+
+###  https://w3id.org/product#ElectricityEmergencyComponent
+prod:ElectricityEmergencyComponent rdf:type owl:Class ;
+                                   rdfs:subClassOf prod:Product ,
+                                                   bc:BuildingComponent ;
+                                   rdfs:label "ElectricityEmergencyComponent"@en .
+
+
+###  https://w3id.org/product#Elevator
+prod:Elevator rdf:type owl:Class ;
+              rdfs:subClassOf prod:Product ,
+                              prod:VerticalTransportationDevice ,
+                              bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Equipment
+prod:Equipment rdf:type owl:Class ;
+               rdfs:subClassOf prod:Product ,
+                               bc:BuildingComponent ;
+               rdfs:label "Equipment"@en .
+
+
+###  https://w3id.org/product#Fan
+prod:Fan rdf:type owl:Class ;
+         rdfs:subClassOf prod:Product ,
+                         bc:AirDistributionComponent ,
+                         bc:BuildingComponent ;
+         rdfs:label "Fan"@en .
+
+
+###  https://w3id.org/product#Finishing
+prod:Finishing rdf:type owl:Class ;
+               rdfs:subClassOf prod:Product ,
+                               bc:BuildingComponent ;
+               rdfs:label "Finishing"@en .
+
+
+###  https://w3id.org/product#FireSprinklerDrop
+prod:FireSprinklerDrop rdf:type owl:Class ;
+                       rdfs:subClassOf prod:Product ,
+                                       bc:BuildingComponent ;
+                       rdfs:label "FireSprinklerDrop"@en .
+
+
+###  https://w3id.org/product#Fitting
+prod:Fitting rdfs:subClassOf bc:MepComponent ,
+                             bc:WaterDistributionComponent .
+
+
+###  https://w3id.org/product#Floor
+prod:Floor rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#FloorCovering
+prod:FloorCovering rdf:type owl:Class ;
+                   rdfs:subClassOf prod:Covering .
+
+
+###  https://w3id.org/product#Foundation
+prod:Foundation rdf:type owl:Class ;
+                rdfs:subClassOf prod:Product ,
+                                bc:BuildingComponent ;
+                rdfs:label "Foundation"@en .
+
+
+###  https://w3id.org/product#Furnishing
+prod:Furnishing rdf:type owl:Class .
+
+
+###  https://w3id.org/product#FurnishingComponent
+prod:FurnishingComponent rdf:type owl:Class ;
+                         rdfs:subClassOf prod:Product ,
+                                         bc:BuildingComponent ;
+                         rdfs:label "FurnishingComponent"@en .
+
+
+###  https://w3id.org/product#Furniture
+prod:Furniture rdf:type owl:Class ;
+               rdfs:subClassOf prod:MovableFurnishing ;
+               rdfs:label "Furniture"@en .
+
+
+###  https://w3id.org/product#FurnitureContent
+prod:FurnitureContent rdf:type owl:Class .
+
+
+###  https://w3id.org/product#GlassPanel
+prod:GlassPanel rdf:type owl:Class ;
+                rdfs:subClassOf prod:Product ,
+                                bc:BuildingComponent ;
+                rdfs:label "Glass Panel"@en .
+
+
+###  https://w3id.org/product#HVACFan
+prod:HVACFan rdf:type owl:Class ;
+             rdfs:subClassOf prod:Fan ;
+             rdfs:label "HVAC Fan"@en .
+
+
+###  https://w3id.org/product#HVACFanInLine
+prod:HVACFanInLine rdf:type owl:Class ;
+                   rdfs:subClassOf prod:Fan ;
+                   rdfs:label "HVAC Fan In Line"@en .
+
+
+###  https://w3id.org/product#HeatExchanger
+prod:HeatExchanger rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#HeatStrengthenedGlassPanel
+prod:HeatStrengthenedGlassPanel rdf:type owl:Class ;
+                                rdfs:subClassOf prod:GlassPanel ;
+                                rdfs:label "Heat Strengthened Glass Panel" .
+
+
+###  https://w3id.org/product#Heater
+prod:Heater rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Humidifier
+prod:Humidifier rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/product#InstrumentationComponent
+prod:InstrumentationComponent rdf:type owl:Class ;
+                              rdfs:subClassOf prod:Product ,
+                                              bc:BuildingComponent ;
+                              rdfs:label "InstrumentationComponent"@en .
+
+
+###  https://w3id.org/product#InsulatedGlassPanel
+prod:InsulatedGlassPanel rdf:type owl:Class ;
+                         rdfs:subClassOf prod:GlassPanel ;
+                         rdfs:label "Insulated Glass Panel" .
+
+
+###  https://w3id.org/product#InsulationCovering
+prod:InsulationCovering rdf:type owl:Class ;
+                        rdfs:subClassOf prod:Covering .
+
+
+###  https://w3id.org/product#LaminatedGlassPanel
+prod:LaminatedGlassPanel rdf:type owl:Class ;
+                         rdfs:subClassOf prod:GlassPanel ;
+                         rdfs:label "Laminated Glass Panel" .
+
+
+###  https://w3id.org/product#Lift
+prod:Lift rdf:type owl:Class ;
+          rdfs:subClassOf prod:Product ,
+                          prod:VerticalTransportationDevice ,
+                          bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Lighting
+prod:Lighting rdf:type owl:Class ;
+              rdfs:subClassOf prod:Product ;
+              rdfs:label "Lighting"@en .
+
+
+###  https://w3id.org/product#LowVoltageSwitchGear
+prod:LowVoltageSwitchGear rdf:type owl:Class ;
+                          rdfs:subClassOf prod:SwitchGear ;
+                          rdfs:label "LowVoltageSwitchGear"@en .
+
+
+###  https://w3id.org/product#Meter
+prod:Meter rdfs:subClassOf bc:MepComponent ,
+                           bc:WaterDistributionComponent .
+
+
+###  https://w3id.org/product#MotorControlCenter
+prod:MotorControlCenter rdf:type owl:Class ;
+                        rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                        prod:Product ,
+                                        bc:BuildingComponent ;
+                        rdfs:label "MotorControlCenter"@en .
+
+
+###  https://w3id.org/product#MotorGenerator
+prod:MotorGenerator rdf:type owl:Class ;
+                    rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                    prod:ElectricityEmergencyComponent ,
+                                    prod:Product ,
+                                    bc:BuildingComponent ;
+                    rdfs:label "MotorGenerator"@en .
+
+
+###  https://w3id.org/product#MovableFurnishing
+prod:MovableFurnishing rdf:type owl:Class ;
+                       rdfs:subClassOf prod:Furnishing ;
+                       rdfs:label "MovableFurnishing"@en .
+
+
+###  https://w3id.org/product#Parapet
+prod:Parapet rdf:type owl:Class ;
+             rdfs:subClassOf prod:Product ;
+             rdfs:label "Parapet"@en .
+
+
+###  https://w3id.org/product#PendantLighting
+prod:PendantLighting rdf:type owl:Class ;
+                     rdfs:subClassOf prod:Lighting ;
+                     rdfs:label "PendantLighting"@en .
+
+
+###  https://w3id.org/product#Pipe
+prod:Pipe rdfs:subClassOf bc:MepComponent ,
+                          bc:WaterDistributionComponent .
+
+
+###  https://w3id.org/product#Pump
+prod:Pump rdfs:subClassOf bc:MepComponent ,
+                          bc:WaterDistributionComponent .
+
+
+###  https://w3id.org/product#Railing
+prod:Railing rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#RaisedAccessFloor
+prod:RaisedAccessFloor rdf:type owl:Class ;
+                       rdfs:subClassOf prod:Floor ,
+                                       bc:Floor .
+
+
+###  https://w3id.org/product#Ramp
+prod:Ramp rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#RecessedCeilingLighting
+prod:RecessedCeilingLighting rdf:type owl:Class ;
+                             rdfs:subClassOf prod:Lighting ;
+                             rdfs:label "RecessedCeilingLighting"@en .
+
+
+###  https://w3id.org/product#Roof
+prod:Roof rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#RoofCovering
+prod:RoofCovering rdf:type owl:Class ;
+                  rdfs:subClassOf prod:Covering .
+
+
+###  https://w3id.org/product#Sealant
+prod:Sealant rdf:type owl:Class ;
+             rdfs:subClassOf prod:Product ;
+             rdfs:label "Sealant"@en .
+
+
+###  https://w3id.org/product#ShadingDevice
+prod:ShadingDevice rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Slab
+prod:Slab rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#SlabToColumnConnection
+prod:SlabToColumnConnection rdf:type owl:Class ;
+                            rdfs:subClassOf prod:Connection ;
+                            rdfs:label "SlabToColumnConnection"@en .
+
+
+###  https://w3id.org/product#Stair
+prod:Stair rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#StairStringer
+prod:StairStringer rdf:type owl:Class ;
+                   rdfs:subClassOf prod:Product ,
+                                   bc:BuildingComponent ;
+                   rdfs:label "Stair stringer"@en .
+
+
+###  https://w3id.org/product#StairThread
+prod:StairThread rdf:type owl:Class ;
+                 rdfs:subClassOf prod:Product ,
+                                 bc:BuildingComponent ;
+                 rdfs:label "Stair thread"@en .
+
+
+###  https://w3id.org/product#Storage
+prod:Storage rdf:type owl:Class ;
+             rdfs:subClassOf prod:Product ,
+                             bc:BuildingComponent ;
+             rdfs:label "Storage"@en .
+
+
+###  https://w3id.org/product#StorageRack
+prod:StorageRack rdf:type owl:Class ;
+                 rdfs:subClassOf prod:Storage ;
+                 rdfs:label "StorageRack"@en .
+
+
+###  https://w3id.org/product#SuspendedCeiling
+prod:SuspendedCeiling rdf:type owl:Class ;
+                      rdfs:subClassOf prod:Ceiling ;
+                      rdfs:label "SuspendedCeiling"@en .
+
+
+###  https://w3id.org/product#SwitchGear
+prod:SwitchGear rdf:type owl:Class ;
+                rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                prod:Product ,
+                                bc:BuildingComponent ;
+                rdfs:label "SwitchGear"@en .
+
+
+###  https://w3id.org/product#Table
+prod:Table rdfs:subClassOf prod:Furniture ,
+                           prod:MovableFurnishing ,
+                           bc:Furnishing .
+
+
+###  https://w3id.org/product#TemperedGlassPanel
+prod:TemperedGlassPanel rdf:type owl:Class ;
+                        rdfs:subClassOf prod:GlassPanel ;
+                        rdfs:label "Tempered Glass Panel" .
+
+
+###  https://w3id.org/product#Transformer
+prod:Transformer rdf:type owl:Class ;
+                 rdfs:subClassOf prod:ElectricityDistributionComponent ,
+                                 prod:Product ,
+                                 bc:BuildingComponent ;
+                 rdfs:label "Transformer"@en .
+
+
+###  https://w3id.org/product#Valve
+prod:Valve rdfs:subClassOf bc:MepComponent ,
+                           bc:WaterDistributionComponent .
+
+
+###  https://w3id.org/product#VariableAirVolumeBox
+prod:VariableAirVolumeBox rdf:type owl:Class ;
+                          rdfs:subClassOf prod:Product ,
+                                          bc:AirDistributionComponent ,
+                                          bc:BuildingComponent ;
+                          rdfs:label "VariableAirVolumeBox"@en .
+
+
+###  https://w3id.org/product#VerticalTransportationDevice
+prod:VerticalTransportationDevice rdf:type owl:Class ;
+                                  rdfs:subClassOf prod:Product ,
+                                                  bc:BuildingComponent .
+
+
+###  https://w3id.org/product#Wall
+prod:Wall rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/product#WallCovering
+prod:WallCovering rdf:type owl:Class ;
+                  rdfs:subClassOf prod:Covering .
+
+
+###  https://w3id.org/product#WetSealant
+prod:WetSealant rdf:type owl:Class ;
+                rdfs:subClassOf prod:Sealant .
+
+
+###  https://w3id.org/product#Window
+prod:Window rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround
+bc:AboveGround rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty bc:isAboveGround ;
+                                     owl:hasValue "true"^^xsd:boolean
+                                   ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent
+bc:AirDistributionComponent rdf:type owl:Class ;
+                            rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BelowGround
+bc:BelowGround rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty bc:isAboveGround ;
+                                     owl:hasValue "false"^^xsd:boolean
+                                   ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Building
+bc:Building rdf:type owl:Class ;
+            rdfs:subClassOf bc:BuildingProduct ;
+            owl:disjointWith bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent
+bc:BuildingComponent rdf:type owl:Class ;
+                     rdfs:subClassOf prod:Product ,
+                                     bc:BuildingProduct .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType
+bc:BuildingComponentType rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct
+bc:BuildingProduct rdf:type owl:Class ;
+                   rdfs:subClassOf prod:Product .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Clearance
+bc:Clearance rdf:type owl:Class ;
+             rdfs:subClassOf bc:ComponentAttribute .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedFrame
+bc:ColdFormedFrame rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( bc:Frame
+                                                              bc:MadeOfColdFormedSteel
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedSteelFramed
+bc:ColdFormedSteelFramed rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty bc:hasFrame ;
+                                               owl:someValuesFrom bc:ColdFormedFrame
+                                             ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute
+bc:ComponentAttribute rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Ducting
+bc:Ducting rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( prod:Duct
+                                               prod:DuctTransition
+                                               prod:Fitting
+                                             )
+                               ] ;
+           rdfs:subClassOf bc:AirDistributionComponent ,
+                           bc:MepComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment
+bc:Equipment rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ExteriorComponent
+bc:ExteriorComponent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( bc:AboveGround
+                                                                bc:BuildingComponent
+                                                                bc:External
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     owl:disjointWith bc:InteriorComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#External
+bc:External rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty bc:isExternal ;
+                                  owl:hasValue "true"^^xsd:boolean
+                                ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Floor
+bc:Floor rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Frame
+bc:Frame rdf:type owl:Class ;
+         rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing
+bc:Furnishing rdf:type owl:Class ;
+              rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Infilled
+bc:Infilled rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty dicm:hasLayer ;
+                                  owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                       owl:onProperty dicm:hasMaterial ;
+                                                       owl:someValuesFrom dicm:Material
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty bc:hasInfill ;
+                                  owl:someValuesFrom bc:WallInfill
+                                ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#InteriorComponent
+bc:InteriorComponent rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( bc:BuildingComponent
+                                                                bc:Internal
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Internal
+bc:Internal rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty bc:isExternal ;
+                                  owl:hasValue "false"^^xsd:boolean
+                                ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace
+bc:LateralBrace rdf:type owl:Class ;
+                rdfs:subClassOf bc:Restraint .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Layer
+bc:Layer rdf:type owl:Class ;
+         rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing
+bc:LoadBearing rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty bc:isLoadBearing ;
+                                     owl:hasValue "true"^^xsd:boolean
+                                   ] ;
+               rdfs:subClassOf bc:BuildingComponent ;
+               owl:disjointWith bc:NonLoadBearing .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel
+bc:MadeOfColdFormedSteel rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty dicm:hasLayer ;
+                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty dicm:hasMaterial ;
+                                                                    owl:hasValue dicm:ColdFormedSteel
+                                                                  ]
+                                             ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete
+bc:MadeOfConcrete rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty dicm:hasLayer ;
+                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                             owl:onProperty dicm:hasMaterial ;
+                                                             owl:hasValue dicm:Concrete
+                                                           ]
+                                      ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper
+bc:MadeOfCopper rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty dicm:hasLayer ;
+                                      owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                           owl:onProperty dicm:hasMaterial ;
+                                                           owl:hasValue dicm:Copper
+                                                         ]
+                                    ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass
+bc:MadeOfGlass rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty dicm:hasLayer ;
+                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                          owl:onProperty dicm:hasMaterial ;
+                                                          owl:hasValue dicm:Glass
+                                                        ]
+                                   ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum
+bc:MadeOfGypsum rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty dicm:hasLayer ;
+                                      owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                           owl:onProperty dicm:hasMaterial ;
+                                                           owl:hasValue dicm:Gypsum
+                                                         ]
+                                    ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry
+bc:MadeOfMasonry rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty dicm:hasLayer ;
+                                       owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                            owl:onProperty dicm:hasMaterial ;
+                                                            owl:hasValue dicm:Masonry
+                                                          ]
+                                     ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal
+bc:MadeOfMetal rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( bc:MadeOfColdFormedSteel
+                                                   bc:MadeOfSteel
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty dicm:hasLayer ;
+                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty dicm:hasMaterial ;
+                                                                          owl:someValuesFrom dicm:MetallicMaterial
+                                                                        ]
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty dicm:hasLayer ;
+                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty dicm:hasMaterial ;
+                                                                          owl:hasValue dicm:Aluminium
+                                                                        ]
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty dicm:hasLayer ;
+                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty dicm:hasMaterial ;
+                                                                          owl:hasValue dicm:Metal
+                                                                        ]
+                                                   ]
+                                                 )
+                                   ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster
+bc:MadeOfPlaster rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty dicm:hasLayer ;
+                                       owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                            owl:onProperty dicm:hasMaterial ;
+                                                            owl:hasValue dicm:Plaster
+                                                          ]
+                                     ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer
+bc:MadeOfPolymer rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty dicm:hasLayer ;
+                                       owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                            owl:onProperty dicm:hasMaterial ;
+                                                            owl:hasValue dicm:Polymer
+                                                          ]
+                                     ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete
+bc:MadeOfPrecastReinforcedConcrete rdf:type owl:Class ;
+                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                         owl:onProperty dicm:hasLayer ;
+                                                         owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty dicm:hasMaterial ;
+                                                                              owl:hasValue dicm:PrecastRCConcrete
+                                                                            ]
+                                                       ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete
+bc:MadeOfReinforcedConcrete rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty dicm:hasLayer ;
+                                                  owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dicm:hasMaterial ;
+                                                                       owl:hasValue dicm:ReinforcedConcrete
+                                                                     ]
+                                                ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel
+bc:MadeOfSteel rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty dicm:hasLayer ;
+                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                          owl:onProperty dicm:hasMaterial ;
+                                                          owl:hasValue dicm:Steel
+                                                        ]
+                                   ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco
+bc:MadeOfStucco rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty dicm:hasLayer ;
+                                      owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                           owl:onProperty dicm:hasMaterial ;
+                                                           owl:hasValue dicm:Stucco
+                                                         ]
+                                    ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood
+bc:MadeOfWood rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty dicm:hasLayer ;
+                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty dicm:hasMaterial ;
+                                                         owl:hasValue dicm:Wood
+                                                       ]
+                                  ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent
+bc:MepComponent rdf:type owl:Class ;
+                rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType
+bc:MepSystemType rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MetalFrame
+bc:MetalFrame rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( bc:Frame
+                                                         bc:MadeOfMetal
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing
+bc:NonLoadBearing rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty bc:isLoadBearing ;
+                                        owl:hasValue "false"^^xsd:boolean
+                                      ] ;
+                  rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#NonstructuralComponent
+bc:NonstructuralComponent rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( bc:BuildingComponent
+                                                                     bc:NonLoadBearing
+                                                                     [ rdf:type owl:Class ;
+                                                                       owl:complementOf bc:MepComponent
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf bc:BuildingComponent ;
+                          owl:disjointWith bc:StructuralComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Panel
+bc:Panel rdf:type owl:Class ;
+         rdfs:subClassOf bc:BuildingComponent ,
+                         bc:WallInfill ;
+         owl:disjointWith bc:X-Bracing .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing
+bc:PipeBracing rdf:type owl:Class ;
+               rdfs:subClassOf bc:Restraint .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter
+bc:PipeDiameter rdf:type owl:Class ;
+                rdfs:subClassOf om2:Diameter ,
+                                bc:ComponentAttribute .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Piping
+bc:Piping rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( prod:Fitting
+                                              prod:Pipe
+                                            )
+                              ] ;
+          rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Quantity
+bc:Quantity rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint
+bc:Restraint rdf:type owl:Class ;
+             rdfs:subClassOf bc:SupportComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent
+bc:StructuralComponent rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( bc:BuildingComponent
+                                                                  bc:LoadBearing
+                                                                  [ rdf:type owl:Class ;
+                                                                    owl:complementOf bc:MepComponent
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#SuperstructureComponent
+bc:SuperstructureComponent rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( bc:StructuralComponent
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty bc:isAboveGround ;
+                                                                        owl:hasValue "true"^^xsd:boolean
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#SupportComponent
+bc:SupportComponent rdf:type owl:Class ;
+                    rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Thickness
+bc:Thickness rdf:type owl:Class ;
+             rdfs:subClassOf om2:Thickness ,
+                             bc:ComponentAttribute .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Unit
+bc:Unit rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#VerticalBrace
+bc:VerticalBrace rdf:type owl:Class ;
+                 rdfs:subClassOf bc:Restraint .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Wall
+bc:Wall rdf:type owl:Class ;
+        rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill
+bc:WallInfill rdf:type owl:Class ;
+              rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithHoldowns
+bc:WallWithHoldowns rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithoutHoldowns
+bc:WallWithoutHoldowns rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent
+bc:WaterDistributionComponent rdf:type owl:Class ;
+                              rdfs:subClassOf bc:MepComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Weight
+bc:Weight rdf:type owl:Class ;
+          rdfs:subClassOf bc:ComponentAttribute .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WoodFrame
+bc:WoodFrame rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( bc:Frame
+                                                        bc:MadeOfWood
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WoodPanel
+bc:WoodPanel rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( bc:Panel
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty dicm:hasMaterial ;
+                                                          owl:hasValue dicm:Wood
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf bc:BuildingComponent .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#X-Bracing
+bc:X-Bracing rdf:type owl:Class ;
+             rdfs:subClassOf bc:WallInfill .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/product#FurnitureContent
+prod:FurnitureContent rdf:type owl:NamedIndividual ,
+                               prod:Product .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning
+bc:AirConditioning rdf:type owl:NamedIndividual ,
+                            bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater
+bc:ColdWater rdf:type owl:NamedIndividual ,
+                      bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying
+bc:Conveying rdf:type owl:NamedIndividual ,
+                      bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater
+bc:CoolingWater rdf:type owl:NamedIndividual ,
+                         bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical
+bc:Electrical rdf:type owl:NamedIndividual ,
+                       bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust
+bc:Exhaust rdf:type owl:NamedIndividual ,
+                    bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection
+bc:FireProtection rdf:type owl:NamedIndividual ,
+                           bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC
+bc:HVAC rdf:type owl:NamedIndividual ,
+                 bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Heating
+bc:Heating rdf:type owl:NamedIndividual ,
+                    bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater
+bc:HotWater rdf:type owl:NamedIndividual ,
+                     bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Inch
+bc:Inch rdf:type owl:NamedIndividual ,
+                 bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#KilogramPerMetre
+bc:KilogramPerMetre rdf:type owl:NamedIndividual ,
+                             bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Metre
+bc:Metre rdf:type owl:NamedIndividual ,
+                  bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PoundPerFoot
+bc:PoundPerFoot rdf:type owl:NamedIndividual ,
+                         bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#SquareInch
+bc:SquareInch rdf:type owl:NamedIndividual ,
+                       bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#SquareMetre
+bc:SquareMetre rdf:type owl:NamedIndividual ,
+                        bc:Unit .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Steam
+bc:Steam rdf:type owl:NamedIndividual ,
+                  bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation
+bc:Ventilation rdf:type owl:NamedIndividual ,
+                        bc:MepSystemType .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Waste
+bc:Waste rdf:type owl:NamedIndividual ,
+                  bc:MepSystemType .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+prod:FurnitureContent rdfs:label "FurnitureContent"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
