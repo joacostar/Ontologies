@@ -1,0 +1,147 @@
+@prefix : <http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicm: <https://w3id.org/digitalconstruction/0.5/Materials/Subset#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ifcLit: <http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#> .
+@base <http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit> .
+
+<http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit> rdf:type owl:Ontology ;
+                                                               owl:imports <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> ,
+                                                                           <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasMaterial
+ifcLit:hasMaterial rdf:type owl:ObjectProperty ;
+                   owl:inverseOf ifcLit:isMaterialOf ;
+                   rdfs:domain ifc:IfcObjectDefinition ;
+                   rdfs:range ifc:IfcMaterialDefinition .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasMaterialReference
+ifcLit:hasMaterialReference rdf:type owl:ObjectProperty ;
+                            rdfs:domain ifc:IfcMaterialDefinition ;
+                            rdfs:range dicm:Material .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPhysicalComplexQuantity
+ifcLit:hasPhysicalComplexQuantity rdf:type owl:ObjectProperty ;
+                                  rdfs:domain ifc:IfcRoot ;
+                                  rdfs:range ifc:IfcPhysicalComplexQuantity .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPhysicalSimpleQuantity
+ifcLit:hasPhysicalSimpleQuantity rdf:type owl:ObjectProperty ;
+                                 rdfs:domain ifc:IfcRoot ;
+                                 rdfs:range ifc:IfcPhysicalSimpleQuantity .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasProperty
+ifcLit:hasProperty rdf:type owl:ObjectProperty ;
+                   rdfs:domain ifc:IfcRoot ;
+                   rdfs:range ifc:IfcPropertyAbstraction .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPropertySingleValue
+ifcLit:hasPropertySingleValue rdf:type owl:ObjectProperty ;
+                              rdfs:domain ifc:IfcRoot ;
+                              rdfs:range ifc:IfcPropertySingleValue .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasType
+ifcLit:hasType rdf:type owl:ObjectProperty ;
+               rdfs:domain ifc:IfcObject ;
+               rdfs:range ifc:IfcTypeObject .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#isDefinedBy_IfcObject
+ifcLit:isDefinedBy_IfcObject rdf:type owl:ObjectProperty ;
+                             owl:inverseOf ifc:relatedObjects_IfcRelDefinesByProperties ;
+                             rdfs:label "IsDefinedBy" .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#isInDistributionSystemPredefinedType
+ifcLit:isInDistributionSystemPredefinedType rdf:type owl:ObjectProperty ,
+                                                     owl:IrreflexiveProperty ;
+                                            rdfs:domain ifc:IfcObjectDefinition ;
+                                            rdfs:range ifc:IfcDistributionSystemEnum .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#isInGroup
+ifcLit:isInGroup rdf:type owl:ObjectProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain ifc:IfcObjectDefinition ;
+                 rdfs:range ifc:IfcGroup .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#isMaterialOf
+ifcLit:isMaterialOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasAreaValue_IfcQuantityArea
+ifcLit:hasAreaValue_IfcQuantityArea rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain ifc:IfcQuantityArea ;
+                                    rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasGlobalId
+ifcLit:hasGlobalId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ifc:IfcRoot ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasLengthValue_IfcQuantityLength
+ifcLit:hasLengthValue_IfcQuantityLength rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain ifc:IfcQuantityLength ;
+                                        rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasName
+ifcLit:hasName rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( ifc:IfcPhysicalQuantity
+                                           ifc:IfcPropertySingleValue
+                                           ifc:IfcRoot
+                                         )
+                           ] ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasObjectType_IfcObject
+ifcLit:hasObjectType_IfcObject rdf:type owl:DatatypeProperty ;
+                               rdfs:domain ifc:IfcObject ;
+                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasTag
+ifcLit:hasTag rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( ifc:IfcElement
+                                          ifc:IfcTypeProduct
+                                        )
+                          ] ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasValue_IfcPropertySingleValue
+ifcLit:hasValue_IfcPropertySingleValue rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain ifc:IfcPropertySingleValue .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasVolumeValue_IfcQuantityVolume
+ifcLit:hasVolumeValue_IfcQuantityVolume rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain ifc:IfcQuantityVolume ;
+                                        rdfs:range xsd:double .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

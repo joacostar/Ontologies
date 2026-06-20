@@ -1,0 +1,169 @@
+@prefix : <http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#> .
+@prefix bc: <http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign> .
+
+<http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign> rdf:type owl:Ontology ;
+                                                                      owl:imports <http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#hasPipeBracingType
+:hasPipeBracingType rdf:type owl:ObjectProperty ;
+                    rdfs:domain bc:Piping ;
+                    rdfs:range :PipeBracingType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#hasSeismicDesignCategory
+:hasSeismicDesignCategory rdf:type owl:ObjectProperty ;
+                          rdfs:domain bc:BuildingProduct ;
+                          rdfs:range :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#hasSeismicDesignType
+:hasSeismicDesignType rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#hasWallSupportType
+:hasWallSupportType rdf:type owl:ObjectProperty ;
+                    rdfs:domain bc:Wall ;
+                    rdfs:range :WallSupportType .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#hasImportanceCoefficient
+:hasImportanceCoefficient rdf:type owl:DatatypeProperty ;
+                          rdfs:domain bc:BuildingProduct ;
+                          rdfs:range xsd:double .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#HighSeismicity
+:HighSeismicity rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( :SDCD
+                                                  :SDCE
+                                                  :SDCF
+                                                )
+                                    ] ;
+                rdfs:subClassOf :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#LowSeismicity
+:LowSeismicity rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( :SDCA
+                                                 :SDCB
+                                               )
+                                   ] ;
+               rdfs:subClassOf :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#PipeBracingType
+:PipeBracingType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SeismicDesignCategory
+:SeismicDesignCategory rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SeismicDesignType
+:SeismicDesignType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#WallSupportType
+:WallSupportType rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#FixedBelowFreeAbove
+:FixedBelowFreeAbove rdf:type owl:NamedIndividual ,
+                              :WallSupportType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#FixedBelowSlidingAbove
+:FixedBelowSlidingAbove rdf:type owl:NamedIndividual ,
+                                 :WallSupportType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#FixedBelowSlidingAboveWithReturnTrack
+:FixedBelowSlidingAboveWithReturnTrack rdf:type owl:NamedIndividual ,
+                                                :WallSupportType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#FixedFixed
+:FixedFixed rdf:type owl:NamedIndividual ,
+                     :WallSupportType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#Intermediate
+:Intermediate rdf:type owl:NamedIndividual ,
+                       :SeismicDesignType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#Ordinary
+:Ordinary rdf:type owl:NamedIndividual ,
+                   :SeismicDesignType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCA
+:SDCA rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCB
+:SDCB rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCC
+:SDCC rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCD
+:SDCD rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCE
+:SDCE rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#SDCF
+:SDCF rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#Special
+:Special rdf:type owl:NamedIndividual ,
+                  :SeismicDesignType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#VerticalAndLateral
+:VerticalAndLateral rdf:type owl:NamedIndividual ,
+                             :PipeBracingType .
+
+
+###  http://www.semanticweb.org/joaquin/ontologies/2024/7/SeismicDesign#VerticalOnly
+:VerticalOnly rdf:type owl:NamedIndividual ,
+                       :PipeBracingType .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
