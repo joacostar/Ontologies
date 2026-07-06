@@ -1,538 +1,591 @@
-@prefix : <http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#> .
-@prefix bc: <http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#> .
+@prefix : <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#> .
+@prefix bc: <https://w3id.org/utoronto/ontologies/BuildingComponents#> .
 @prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
 @prefix om2: <http://www.ontology-of-units-of-measure.org/resource/om-2/subset#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sfa: <http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#> .
+@prefix sfa: <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dicm: <https://w3id.org/digitalconstruction/0.5/Materials/Subset#> .
 @prefix prod: <https://w3id.org/product#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ifcLit: <http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#> .
-@prefix sfront: <http://www.semanticweb.org/joaquin/ontologies/2025/05/SeisFront#> .
-@base <http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#> .
+@prefix ifcLit: <https://w3id.org/utoronto/ontologies/IfcLit#> .
+@prefix sfront: <https://w3id.org/utoronto/ontologies/SeisFront#> .
+@base <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#> .
 
-<http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment> rdf:type owl:Ontology ;
-                                                                            owl:imports <http://www.ontology-of-units-of-measure.org/resource/om-2/subset> ,
-                                                                                        <http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents> ,
-                                                                                        <http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit> ,
-                                                                                        <http://www.semanticweb.org/joaquin/ontologies/2025/05/SeisFront> ,
-                                                                                        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> ,
-                                                                                        <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> rdf:type owl:Ontology ;
+                                                           owl:imports <http://www.ontology-of-units-of-measure.org/resource/om-2/subset> ,
+                                                                       <https://w3id.org/utoronto/ontologies/BuildingComponents> ,
+                                                                       <https://w3id.org/utoronto/ontologies/IfcLit> ,
+                                                                       <https://w3id.org/utoronto/ontologies/SeisFront> ,
+                                                                       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> ,
+                                                                       <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#isInSystemOfType
-bc:isInSystemOfType owl:equivalentProperty ifcLit:isInDistributionSystemPredefinedType .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute
+<https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#hasUnitWithName
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> ;
+                                                                                        owl:inverseOf sfa:isPhysicalQuantityOf .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasProperty
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:subPropertyOf <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> ;
+                                                                                     owl:inverseOf sfa:isPropertyOf .
+
+
+###  https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName
 sfa:hasUnitWithName rdf:type owl:ObjectProperty ;
                     owl:propertyChainAxiom ( ifc:unit_IfcPropertySingleValue
                                              ifc:name_IfcSIUnit
                                            ) .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#isPhysicalQuantityOf
-sfa:isPhysicalQuantityOf rdf:type owl:ObjectProperty ;
-                         owl:inverseOf ifcLit:hasPhysicalSimpleQuantity .
+###  https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf
+sfa:isPhysicalQuantityOf rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/SeisFrontAlignment#isPropertyOf
-sfa:isPropertyOf rdf:type owl:ObjectProperty ;
-                 owl:inverseOf ifcLit:hasPropertySingleValue .
+###  https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf
+sfa:isPropertyOf rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPhysicalComplexQuantity
-ifcLit:hasPhysicalComplexQuantity rdfs:subPropertyOf bc:hasAttribute .
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasName
+<https://w3id.org/utoronto/ontologies/IfcLit#hasName> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPhysicalSimpleQuantity
-ifcLit:hasPhysicalSimpleQuantity rdfs:subPropertyOf bc:hasAttribute .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasProperty
-ifcLit:hasProperty rdfs:subPropertyOf bc:hasAttribute .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/7/IfcLit#hasPropertySingleValue
-ifcLit:hasPropertySingleValue rdfs:subPropertyOf bc:hasAttribute .
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#AboveGround
-bc:AboveGround owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty ifcLit:hasPropertySingleValue ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasName ;
-                                                                                 owl:hasValue "AboveGround"
-                                                                               ]
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                 owl:hasValue "true"^^xsd:boolean
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround
+<https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> ;
+                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                                         owl:hasValue "AboveGround"
+                                                                                                                                                       ]
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                         owl:hasValue "true"^^xsd:boolean
+                                                                                                                                                       ]
+                                                                                                                                                     ) ;
+                                                                                                                                  rdf:type owl:Class
+                                                                                                                                ]
+                                                                                                           ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#BuildingComponent
-bc:BuildingComponent owl:equivalentClass ifc:IfcElement .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent
+<https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent> rdf:type owl:Class ;
+                                                                                             owl:equivalentClass ifc:IfcElement .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#BuildingComponentType
-bc:BuildingComponentType owl:equivalentClass ifc:IfcElementType .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType
+<https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType> rdf:type owl:Class ;
+                                                                                                 owl:equivalentClass ifc:IfcElementType .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Equipment
-bc:Equipment owl:equivalentClass [ rdf:type owl:Class ;
-                                   owl:unionOf ( ifc:IfcEnergyConversionDevice
-                                                 ifc:IfcFlowMovingDevice
-                                               )
-                                 ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment> rdf:type owl:Class ;
+                                                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                           owl:unionOf ( ifc:IfcEnergyConversionDevice
+                                                                                                                         ifc:IfcFlowMovingDevice
+                                                                                                                       )
+                                                                                                         ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#External
-bc:External owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty ifcLit:hasPropertySingleValue ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty ifcLit:hasName ;
-                                                                              owl:hasValue "IsExternal"
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                              owl:hasValue "true"^^xsd:boolean
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#External
+<https://w3id.org/utoronto/ontologies/BuildingComponents#External> rdf:type owl:Class ;
+                                                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> ;
+                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                                      owl:hasValue "IsExternal"
+                                                                                                                                                    ]
+                                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                      owl:hasValue "true"^^xsd:boolean
+                                                                                                                                                    ]
+                                                                                                                                                  ) ;
+                                                                                                                               rdf:type owl:Class
+                                                                                                                             ]
+                                                                                                        ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Internal
-bc:Internal owl:equivalentClass [ rdf:type owl:Restriction ;
-                                  owl:onProperty ifcLit:hasPropertySingleValue ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty ifcLit:hasName ;
-                                                                              owl:hasValue "IsExternal"
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                              owl:hasValue "false"^^xsd:boolean
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Internal
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Internal> rdf:type owl:Class ;
+                                                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> ;
+                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                                      owl:hasValue "IsExternal"
+                                                                                                                                                    ]
+                                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                                                                                    ]
+                                                                                                                                                  ) ;
+                                                                                                                               rdf:type owl:Class
+                                                                                                                             ]
+                                                                                                        ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#LateralBrace
-bc:LateralBrace rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                  owl:onProperty ifc:predefinedType_IfcMember ;
-                                  owl:someValuesFrom [ rdf:type owl:Class ;
-                                                       owl:oneOf ( ifc:BRACE
-                                                                   ifc:STRUT
-                                                                 )
-                                                     ]
-                                ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty ifc:predefinedType_IfcMember ;
+                                                                                                          owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                               owl:oneOf ( ifc:BRACE
+                                                                                                                                           ifc:STRUT
+                                                                                                                                         )
+                                                                                                                             ]
+                                                                                                        ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#LoadBearing
-bc:LoadBearing owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty ifcLit:hasPropertySingleValue ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasName ;
-                                                                                 owl:hasValue "LoadBearing"
-                                                                               ]
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                 owl:hasValue "true"^^xsd:boolean
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> ;
+                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                                         owl:hasValue "LoadBearing"
+                                                                                                                                                       ]
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                         owl:hasValue "true"^^xsd:boolean
+                                                                                                                                                       ]
+                                                                                                                                                     ) ;
+                                                                                                                                  rdf:type owl:Class
+                                                                                                                                ]
+                                                                                                           ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfColdFormedSteel
-bc:MadeOfColdFormedSteel owl:equivalentClass [ rdf:type owl:Restriction ;
-                                               owl:onProperty ifcLit:hasMaterial ;
-                                               owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                           owl:hasValue dicm:ColdFormedSteel
-                                                                                         ]
-                                                                                       ) ;
-                                                                    rdf:type owl:Class
-                                                                  ]
-                                             ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel> rdf:type owl:Class ;
+                                                                                                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                                                   owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                                   owl:hasValue dicm:ColdFormedSteel
+                                                                                                                                                                 ]
+                                                                                                                                                               ) ;
+                                                                                                                                            rdf:type owl:Class
+                                                                                                                                          ]
+                                                                                                                     ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfConcrete
-bc:MadeOfConcrete owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty ifcLit:hasMaterial ;
-                                        owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                    owl:hasValue dicm:Concrete
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ]
-                                      ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete> rdf:type owl:Class ;
+                                                                                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                                owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                            owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                            owl:hasValue dicm:Concrete
+                                                                                                                                                          ]
+                                                                                                                                                        ) ;
+                                                                                                                                     rdf:type owl:Class
+                                                                                                                                   ]
+                                                                                                              ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfCopper
-bc:MadeOfCopper owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty ifcLit:hasMaterial ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                  owl:hasValue dicm:Copper
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper> rdf:type owl:Class ;
+                                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                              owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                          owl:hasValue dicm:Copper
+                                                                                                                                                        ]
+                                                                                                                                                      ) ;
+                                                                                                                                   rdf:type owl:Class
+                                                                                                                                 ]
+                                                                                                            ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfGlass
-bc:MadeOfGlass owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty ifcLit:hasMaterial ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                 owl:hasValue dicm:Glass
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                         owl:hasValue dicm:Glass
+                                                                                                                                                       ]
+                                                                                                                                                     ) ;
+                                                                                                                                  rdf:type owl:Class
+                                                                                                                                ]
+                                                                                                           ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfGypsum
-bc:MadeOfGypsum owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty ifcLit:hasMaterial ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                  owl:hasValue dicm:Gypsum
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum> rdf:type owl:Class ;
+                                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                              owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                          owl:hasValue dicm:Gypsum
+                                                                                                                                                        ]
+                                                                                                                                                      ) ;
+                                                                                                                                   rdf:type owl:Class
+                                                                                                                                 ]
+                                                                                                            ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfMasonry
-bc:MadeOfMasonry owl:equivalentClass [ rdf:type owl:Restriction ;
-                                       owl:onProperty ifcLit:hasMaterial ;
-                                       owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                   owl:hasValue dicm:Masonry
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ]
-                                     ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry> rdf:type owl:Class ;
+                                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                               owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                           owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                           owl:hasValue dicm:Masonry
+                                                                                                                                                         ]
+                                                                                                                                                       ) ;
+                                                                                                                                    rdf:type owl:Class
+                                                                                                                                  ]
+                                                                                                             ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfMetal
-bc:MadeOfMetal owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty ifcLit:hasMaterial ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                 owl:hasValue dicm:Metal
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                         owl:hasValue dicm:Metal
+                                                                                                                                                       ]
+                                                                                                                                                     ) ;
+                                                                                                                                  rdf:type owl:Class
+                                                                                                                                ]
+                                                                                                           ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPlaster
-bc:MadeOfPlaster owl:equivalentClass [ rdf:type owl:Restriction ;
-                                       owl:onProperty ifcLit:hasMaterial ;
-                                       owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                   owl:hasValue dicm:Plaster
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ]
-                                     ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster> rdf:type owl:Class ;
+                                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                               owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                           owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                           owl:hasValue dicm:Plaster
+                                                                                                                                                         ]
+                                                                                                                                                       ) ;
+                                                                                                                                    rdf:type owl:Class
+                                                                                                                                  ]
+                                                                                                             ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPolymer
-bc:MadeOfPolymer owl:equivalentClass [ rdf:type owl:Restriction ;
-                                       owl:onProperty ifcLit:hasMaterial ;
-                                       owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                   owl:hasValue dicm:Polymer
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ]
-                                     ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer> rdf:type owl:Class ;
+                                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                               owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                           owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                           owl:hasValue dicm:Polymer
+                                                                                                                                                         ]
+                                                                                                                                                       ) ;
+                                                                                                                                    rdf:type owl:Class
+                                                                                                                                  ]
+                                                                                                             ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPrecastReinforcedConcrete
-bc:MadeOfPrecastReinforcedConcrete owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                         owl:onProperty ifcLit:hasMaterial ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                                     owl:hasValue dicm:PrecastRCConcrete
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete> rdf:type owl:Class ;
+                                                                                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                                 owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                                                 owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                                             owl:hasValue dicm:PrecastRCConcrete
+                                                                                                                                                                           ]
+                                                                                                                                                                         ) ;
+                                                                                                                                                      rdf:type owl:Class
+                                                                                                                                                    ]
+                                                                                                                               ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfReinforcedConcrete
-bc:MadeOfReinforcedConcrete owl:equivalentClass [ rdf:type owl:Class ;
-                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty ifcLit:hasMaterial ;
-                                                                  owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                              owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                                              owl:hasValue dicm:Concrete
-                                                                                                            ]
-                                                                                                          ) ;
-                                                                                       rdf:type owl:Class
-                                                                                     ]
-                                                                ]
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty ifcLit:hasMaterial ;
-                                                                  owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                              owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                                              owl:hasValue dicm:ReinforcedConcrete
-                                                                                                            ]
-                                                                                                          ) ;
-                                                                                       rdf:type owl:Class
-                                                                                     ]
-                                                                ]
-                                                              )
-                                                ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete> rdf:type owl:Class ;
+                                                                                                    owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                          owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                                                      owl:hasValue dicm:Concrete
+                                                                                                                                                                                    ]
+                                                                                                                                                                                  ) ;
+                                                                                                                                                               rdf:type owl:Class
+                                                                                                                                                             ]
+                                                                                                                                        ]
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                                                                      owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                                                      owl:hasValue dicm:ReinforcedConcrete
+                                                                                                                                                                                    ]
+                                                                                                                                                                                  ) ;
+                                                                                                                                                               rdf:type owl:Class
+                                                                                                                                                             ]
+                                                                                                                                        ]
+                                                                                                                                      )
+                                                                                                                        ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfSteel
-bc:MadeOfSteel owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty ifcLit:hasMaterial ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                 owl:hasValue dicm:Steel
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                         owl:hasValue dicm:Steel
+                                                                                                                                                       ]
+                                                                                                                                                     ) ;
+                                                                                                                                  rdf:type owl:Class
+                                                                                                                                ]
+                                                                                                           ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfStucco
-bc:MadeOfStucco owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty ifcLit:hasMaterial ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                  owl:hasValue dicm:Stucco
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco> rdf:type owl:Class ;
+                                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                              owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                                          owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                          owl:hasValue dicm:Stucco
+                                                                                                                                                        ]
+                                                                                                                                                      ) ;
+                                                                                                                                   rdf:type owl:Class
+                                                                                                                                 ]
+                                                                                                            ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfWood
-bc:MadeOfWood owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty ifcLit:hasMaterial ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                owl:hasValue dicm:Wood
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
-                                  ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                                        owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                                        owl:hasValue dicm:Wood
+                                                                                                                                                      ]
+                                                                                                                                                    ) ;
+                                                                                                                                 rdf:type owl:Class
+                                                                                                                               ]
+                                                                                                          ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MepComponent
-bc:MepComponent owl:equivalentClass [ rdf:type owl:Class ;
-                                      owl:unionOf ( ifc:IfcBuildingElementProxy
-                                                    ifc:IfcDistributionElement
-                                                    ifc:IfcTransportElement
-                                                  )
-                                    ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent> rdf:type owl:Class ;
+                                                                                        owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                              owl:unionOf ( ifc:IfcBuildingElementProxy
+                                                                                                                            ifc:IfcDistributionElement
+                                                                                                                            ifc:IfcTransportElement
+                                                                                                                          )
+                                                                                                            ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#NonLoadBearing
-bc:NonLoadBearing owl:equivalentClass [ rdf:type owl:Class ;
-                                        owl:unionOf ( ifc:IfcChimney
-                                                      ifc:IfcCovering
-                                                      ifc:IfcCurtainWall
-                                                      ifc:IfcDistributionElement
-                                                      ifc:IfcDoor
-                                                      ifc:IfcFurnishingElement
-                                                      ifc:IfcRailing
-                                                      ifc:IfcShadingDevice
-                                                      ifc:IfcTransportElement
-                                                      ifc:IfcWindow
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty ifcLit:hasPropertySingleValue ;
-                                                        owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty ifcLit:hasName ;
-                                                                                                    owl:hasValue "LoadBearing"
-                                                                                                  ]
-                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                                    owl:hasValue "false"^^xsd:boolean
-                                                                                                  ]
-                                                                                                ) ;
-                                                                             rdf:type owl:Class
-                                                                           ]
-                                                      ]
-                                                    )
-                                      ] .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#PipeBracing
-bc:PipeBracing rdfs:subClassOf [ owl:intersectionOf ( ifc:IfcMember
-                                                      [ rdf:type owl:Class ;
-                                                        owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty ifc:predefinedType_IfcMember ;
-                                                                        owl:hasValue ifc:BRACE
-                                                                      ]
-                                                                      [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty ifc:predefinedType_IfcMember ;
-                                                                        owl:hasValue ifc:STRUT
-                                                                      ]
-                                                                    )
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#PipeDiameter
-bc:PipeDiameter owl:equivalentClass [ owl:intersectionOf ( ifc:IfcPropertySingleValue
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty sfa:isPropertyOf ;
-                                                             owl:someValuesFrom prod:Pipe
-                                                           ]
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty ifcLit:hasName ;
-                                                             owl:hasValue "Diameter"
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2025/05/SeisFront#PipeDiameterGreaterThan2.5Inches
-sfront:PipeDiameterGreaterThan2.5Inches owl:equivalentClass [ rdf:type owl:Class ;
-                                                              owl:unionOf ( [ owl:intersectionOf ( bc:PipeDiameter
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty ifc:unit_IfcPhysicalSimpleQuantity ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcSIUnit
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty ifc:name_IfcSIUnit ;
-                                                                                                                                                 owl:hasValue ifc:METRE
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                                                          owl:onDatatype xsd:double ;
-                                                                                                                          owl:withRestrictions ( [ xsd:minExclusive "0.0635"^^xsd:double
-                                                                                                                                                 ]
-                                                                                                                                               )
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                            [ owl:intersectionOf ( bc:PipeDiameter
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty ifc:unit_IfcPropertySingleValue ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcSIUnit
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty ifc:name_IfcSIUnit ;
-                                                                                                                                                 owl:hasValue ifc:METRE
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                                                          owl:onDatatype xsd:double ;
-                                                                                                                          owl:withRestrictions ( [ xsd:minExclusive "0.0635"^^xsd:double
-                                                                                                                                                 ]
-                                                                                                                                               )
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                          )
-                                                            ] .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2025/05/SeisFront#PipeDiameterLessThan2.5Inches
-sfront:PipeDiameterLessThan2.5Inches owl:equivalentClass [ owl:intersectionOf ( bc:PipeDiameter
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty ifc:unit_IfcPropertySingleValue ;
-                                                                                  owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                       owl:onProperty ifc:name_IfcSIUnit ;
-                                                                                                       owl:hasValue ifc:METRE
-                                                                                                     ]
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty ifcLit:hasValue_IfcPropertySingleValue ;
-                                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                                       owl:onDatatype xsd:double ;
-                                                                                                       owl:withRestrictions ( [ xsd:maxInclusive "0.0635"^^xsd:double
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing> rdf:type owl:Class ;
+                                                                                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                owl:unionOf ( ifc:IfcChimney
+                                                                                                                              ifc:IfcCovering
+                                                                                                                              ifc:IfcCurtainWall
+                                                                                                                              ifc:IfcDistributionElement
+                                                                                                                              ifc:IfcDoor
+                                                                                                                              ifc:IfcFurnishingElement
+                                                                                                                              ifc:IfcRailing
+                                                                                                                              ifc:IfcShadingDevice
+                                                                                                                              ifc:IfcTransportElement
+                                                                                                                              ifc:IfcWindow
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> ;
+                                                                                                                                owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                                            owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                                                            owl:hasValue "LoadBearing"
+                                                                                                                                                                          ]
+                                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                                            owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                                            owl:hasValue "false"^^xsd:boolean
+                                                                                                                                                                          ]
+                                                                                                                                                                        ) ;
+                                                                                                                                                     rdf:type owl:Class
+                                                                                                                                                   ]
                                                                                                                               ]
                                                                                                                             )
-                                                                                                     ]
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] .
+                                                                                                              ] .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2025/05/SeisFront#SteelMade
-sfront:SteelMade owl:equivalentClass [ rdf:type owl:Restriction ;
-                                       owl:onProperty ifcLit:hasMaterial ;
-                                       owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty ifcLit:hasMaterialReference ;
-                                                                                   owl:hasValue dicm:Steel
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ]
-                                     ] .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf [ owl:intersectionOf ( ifc:IfcMember
+                                                                                                                              [ rdf:type owl:Class ;
+                                                                                                                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty ifc:predefinedType_IfcMember ;
+                                                                                                                                                owl:hasValue ifc:BRACE
+                                                                                                                                              ]
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty ifc:predefinedType_IfcMember ;
+                                                                                                                                                owl:hasValue ifc:STRUT
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                              ]
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ] .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> rdf:type owl:Class ;
+                                                                                        owl:equivalentClass [ owl:intersectionOf ( ifc:IfcPropertySingleValue
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty sfa:isPropertyOf ;
+                                                                                                                                     owl:someValuesFrom prod:Pipe
+                                                                                                                                   ]
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasName> ;
+                                                                                                                                     owl:hasValue "Diameter"
+                                                                                                                                   ]
+                                                                                                                                 ) ;
+                                                                                                              rdf:type owl:Class
+                                                                                                            ] .
+
+
+###  https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches> rdf:type owl:Class ;
+                                                                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                         owl:unionOf ( [ owl:intersectionOf ( <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter>
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty ifc:unit_IfcPhysicalSimpleQuantity ;
+                                                                                                                                                                owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcSIUnit
+                                                                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                            owl:onProperty ifc:name_IfcSIUnit ;
+                                                                                                                                                                                                            owl:hasValue ifc:METRE
+                                                                                                                                                                                                          ]
+                                                                                                                                                                                                        ) ;
+                                                                                                                                                                                     rdf:type owl:Class
+                                                                                                                                                                                   ]
+                                                                                                                                                              ]
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                                     owl:onDatatype xsd:double ;
+                                                                                                                                                                                     owl:withRestrictions ( [ xsd:minExclusive "0.0635"^^xsd:double
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                          )
+                                                                                                                                                                                   ]
+                                                                                                                                                              ]
+                                                                                                                                                            ) ;
+                                                                                                                                         rdf:type owl:Class
+                                                                                                                                       ]
+                                                                                                                                       [ owl:intersectionOf ( <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter>
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty ifc:unit_IfcPropertySingleValue ;
+                                                                                                                                                                owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcSIUnit
+                                                                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                            owl:onProperty ifc:name_IfcSIUnit ;
+                                                                                                                                                                                                            owl:hasValue ifc:METRE
+                                                                                                                                                                                                          ]
+                                                                                                                                                                                                        ) ;
+                                                                                                                                                                                     rdf:type owl:Class
+                                                                                                                                                                                   ]
+                                                                                                                                                              ]
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                                     owl:onDatatype xsd:double ;
+                                                                                                                                                                                     owl:withRestrictions ( [ xsd:minExclusive "0.0635"^^xsd:double
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                          )
+                                                                                                                                                                                   ]
+                                                                                                                                                              ]
+                                                                                                                                                            ) ;
+                                                                                                                                         rdf:type owl:Class
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                       ] .
+
+
+###  https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches> rdf:type owl:Class ;
+                                                                                                owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter>
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty ifc:unit_IfcPropertySingleValue ;
+                                                                                                                                             owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                                                  owl:onProperty ifc:name_IfcSIUnit ;
+                                                                                                                                                                  owl:hasValue ifc:METRE
+                                                                                                                                                                ]
+                                                                                                                                           ]
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> ;
+                                                                                                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                  owl:onDatatype xsd:double ;
+                                                                                                                                                                  owl:withRestrictions ( [ xsd:maxInclusive "0.0635"^^xsd:double
+                                                                                                                                                                                         ]
+                                                                                                                                                                                       )
+                                                                                                                                                                ]
+                                                                                                                                           ]
+                                                                                                                                         ) ;
+                                                                                                                      rdf:type owl:Class
+                                                                                                                    ] .
+
+
+###  https://w3id.org/utoronto/ontologies/SeisFront#SteelMade
+<https://w3id.org/utoronto/ontologies/SeisFront#SteelMade> rdf:type owl:Class ;
+                                                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> ;
+                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( ifc:IfcMaterial
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> ;
+                                                                                                                                              owl:hasValue dicm:Steel
+                                                                                                                                            ]
+                                                                                                                                          ) ;
+                                                                                                                       rdf:type owl:Class
+                                                                                                                     ]
+                                                                                                ] .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam
@@ -625,8 +678,13 @@ ifc:IfcValve owl:equivalentClass prod:Valve .
 ifc:IfcWindow owl:equivalentClass prod:Window .
 
 
+###  https://w3id.org/product#AirCompressor
+prod:AirCompressor rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#AirHandlingUnit
-prod:AirHandlingUnit owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryEquipment
+prod:AirHandlingUnit rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryEquipment
                                                                 [ rdf:type owl:Class ;
                                                                   owl:unionOf ( [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty ifc:predefinedType_IfcUnitaryEquipment ;
@@ -643,8 +701,13 @@ prod:AirHandlingUnit owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryEq
                                          ] .
 
 
+###  https://w3id.org/product#Beam
+prod:Beam rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Brace
-prod:Brace owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
+prod:Brace rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty ifc:predefinedType_IfcMember ;
                                                         owl:hasValue ifc:BRACE
@@ -655,7 +718,8 @@ prod:Brace owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
 
 
 ###  https://w3id.org/product#Ceiling
-prod:Ceiling owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:Ceiling rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                         [ rdf:type owl:Restriction ;
                                                           owl:onProperty ifc:predefinedType_IfcCovering ;
                                                           owl:hasValue ifc:CEILING
@@ -665,8 +729,21 @@ prod:Ceiling owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                  ] .
 
 
+###  https://w3id.org/product#Chiller
+prod:Chiller rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Coil
+prod:Coil rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Column
+prod:Column rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#ColumnCovering
-prod:ColumnCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:ColumnCovering rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty ifc:predefinedType_IfcCovering ;
                                                                  owl:hasValue ifc:CLADDING
@@ -677,7 +754,8 @@ prod:ColumnCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
 
 
 ###  https://w3id.org/product#ControlPanel
-prod:ControlPanel owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryControlElement
+prod:ControlPanel rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryControlElement
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty ifc:predefinedType_IfcUnitaryControlElement ;
                                                                owl:hasValue ifc:CONTROLPANEL
@@ -687,8 +765,21 @@ prod:ControlPanel owl:equivalentClass [ owl:intersectionOf ( ifc:IfcUnitaryContr
                                       ] .
 
 
+###  https://w3id.org/product#CoolingTower
+prod:CoolingTower rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Covering
+prod:Covering rdf:type owl:Class .
+
+
+###  https://w3id.org/product#CurtainWall
+prod:CurtainWall rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Difusser
-prod:Difusser owl:equivalentClass [ owl:intersectionOf ( ifc:IfcAirTerminal
+prod:Difusser rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( ifc:IfcAirTerminal
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty ifc:predefinedType_IfcAirTerminal ;
                                                            owl:hasValue ifc:DIFFUSER
@@ -699,7 +790,8 @@ prod:Difusser owl:equivalentClass [ owl:intersectionOf ( ifc:IfcAirTerminal
 
 
 ###  https://w3id.org/product#DistributionPanel
-prod:DistributionPanel owl:equivalentClass [ owl:intersectionOf ( ifc:IfcElectricDistributionBoard
+prod:DistributionPanel rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( ifc:IfcElectricDistributionBoard
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ifc:predefinedType_IfcElectricDistributionBoard ;
                                                                     owl:hasValue ifc:DISTRIBUTIONBOARD
@@ -709,8 +801,17 @@ prod:DistributionPanel owl:equivalentClass [ owl:intersectionOf ( ifc:IfcElectri
                                            ] .
 
 
+###  https://w3id.org/product#Door
+prod:Door rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Duct
+prod:Duct rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#DuctTransition
-prod:DuctTransition owl:equivalentClass [ owl:intersectionOf ( ifc:IfcDuctFitting
+prod:DuctTransition rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( ifc:IfcDuctFitting
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty ifc:predefinedType_IfcDuctFitting ;
                                                                  owl:hasValue ifc:TRANSITION
@@ -721,7 +822,8 @@ prod:DuctTransition owl:equivalentClass [ owl:intersectionOf ( ifc:IfcDuctFittin
 
 
 ###  https://w3id.org/product#Elevator
-prod:Elevator owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
+prod:Elevator rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty ifc:predefinedType_IfcTransportElement ;
                                                            owl:hasValue ifc:ELEVATOR
@@ -731,8 +833,17 @@ prod:Elevator owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
                                   ] .
 
 
+###  https://w3id.org/product#Fan
+prod:Fan rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Finishing
+prod:Finishing rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#FireSprinklerDrop
-prod:FireSprinklerDrop owl:equivalentClass [ owl:intersectionOf ( ifc:IfcFireSuppressionTerminal
+prod:FireSprinklerDrop rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( ifc:IfcFireSuppressionTerminal
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty ifc:predefinedType_IfcFireSuppressionTerminal ;
                                                                     owl:hasValue ifc:SPRINKLER
@@ -742,8 +853,13 @@ prod:FireSprinklerDrop owl:equivalentClass [ owl:intersectionOf ( ifc:IfcFireSup
                                            ] .
 
 
+###  https://w3id.org/product#Fitting
+prod:Fitting rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Floor
-prod:Floor owl:equivalentClass [ rdf:type owl:Class ;
+prod:Floor rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
                                  owl:unionOf ( [ owl:intersectionOf ( ifc:IfcCovering
                                                                       [ rdf:type owl:Restriction ;
                                                                         owl:onProperty ifc:predefinedType_IfcCovering ;
@@ -765,7 +881,8 @@ prod:Floor owl:equivalentClass [ rdf:type owl:Class ;
 
 
 ###  https://w3id.org/product#FloorCovering
-prod:FloorCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:FloorCovering rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty ifc:predefinedType_IfcCovering ;
                                                                 owl:hasValue ifc:FLOORING
@@ -776,7 +893,8 @@ prod:FloorCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
 
 
 ###  https://w3id.org/product#Foundation
-prod:Foundation owl:equivalentClass [ rdf:type owl:Class ;
+prod:Foundation rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
                                       owl:unionOf ( ifc:IfcFooting
                                                     [ owl:intersectionOf ( ifc:IfcSlab
                                                                            [ rdf:type owl:Restriction ;
@@ -790,8 +908,13 @@ prod:Foundation owl:equivalentClass [ rdf:type owl:Class ;
                                     ] .
 
 
+###  https://w3id.org/product#Furnishing
+prod:Furnishing rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#InsulationCovering
-prod:InsulationCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:InsulationCovering rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                                    [ rdf:type owl:Restriction ;
                                                                      owl:onProperty ifc:predefinedType_IfcCovering ;
                                                                      owl:hasValue ifc:INSULATION
@@ -802,7 +925,8 @@ prod:InsulationCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCoveri
 
 
 ###  https://w3id.org/product#Lift
-prod:Lift owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
+prod:Lift rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty ifc:predefinedType_IfcTransportElement ;
                                                        owl:hasValue ifc:LIFTINGGEAR
@@ -812,8 +936,33 @@ prod:Lift owl:equivalentClass [ owl:intersectionOf ( ifc:IfcTransportElement
                               ] .
 
 
+###  https://w3id.org/product#Lighting
+prod:Lighting rdf:type owl:Class .
+
+
+###  https://w3id.org/product#PendantLighting
+prod:PendantLighting rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Pipe
+prod:Pipe rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Product
+prod:Product rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Pump
+prod:Pump rdf:type owl:Class .
+
+
+###  https://w3id.org/product#Railing
+prod:Railing rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Roof
-prod:Roof owl:equivalentClass [ rdf:type owl:Class ;
+prod:Roof rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
                                 owl:unionOf ( ifc:IfcRoof
                                               [ owl:intersectionOf ( ifc:IfcCovering
                                                                      [ rdf:type owl:Restriction ;
@@ -836,7 +985,8 @@ prod:Roof owl:equivalentClass [ rdf:type owl:Class ;
 
 
 ###  https://w3id.org/product#RoofCovering
-prod:RoofCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:RoofCovering rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty ifc:predefinedType_IfcCovering ;
                                                                owl:hasValue ifc:ROOFING
@@ -846,8 +996,13 @@ prod:RoofCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                       ] .
 
 
+###  https://w3id.org/product#Slab
+prod:Slab rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Stair
-prod:Stair owl:equivalentClass [ rdf:type owl:Class ;
+prod:Stair rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
                                  owl:unionOf ( ifc:IfcStair
                                                ifc:IfcStairFlight
                                              )
@@ -855,7 +1010,8 @@ prod:Stair owl:equivalentClass [ rdf:type owl:Class ;
 
 
 ###  https://w3id.org/product#StairStringer
-prod:StairStringer owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
+prod:StairStringer rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty ifc:predefinedType_IfcMember ;
                                                                 owl:hasValue ifc:STRINGER
@@ -866,7 +1022,8 @@ prod:StairStringer owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
 
 
 ###  https://w3id.org/product#StairThread
-prod:StairThread owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
+prod:StairThread rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
                                                             [ rdf:type owl:Restriction ;
                                                               owl:onProperty ifc:predefinedType_IfcMember ;
                                                               owl:hasValue ifc:LANDING
@@ -876,8 +1033,17 @@ prod:StairThread owl:equivalentClass [ owl:intersectionOf ( ifc:IfcMember
                                      ] .
 
 
+###  https://w3id.org/product#Valve
+prod:Valve rdf:type owl:Class .
+
+
+###  https://w3id.org/product#VerticalTransportationDevice
+prod:VerticalTransportationDevice rdf:type owl:Class .
+
+
 ###  https://w3id.org/product#Wall
-prod:Wall owl:equivalentClass [ rdf:type owl:Class ;
+prod:Wall rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
                                 owl:unionOf ( ifc:IfcWall
                                               ifc:IfcWallElementedCase
                                               ifc:IfcWallStandardCase
@@ -886,7 +1052,8 @@ prod:Wall owl:equivalentClass [ rdf:type owl:Class ;
 
 
 ###  https://w3id.org/product#WallCovering
-prod:WallCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
+prod:WallCovering rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty ifc:predefinedType_IfcCovering ;
                                                                owl:hasValue ifc:CLADDING
@@ -896,78 +1063,94 @@ prod:WallCovering owl:equivalentClass [ owl:intersectionOf ( ifc:IfcCovering
                                       ] .
 
 
+###  https://w3id.org/product#Window
+prod:Window rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#AirConditioning
-bc:AirConditioning owl:sameAs ifc:AIRCONDITIONING .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning
+<https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning> rdf:type owl:NamedIndividual ;
+                                                                                           owl:sameAs ifc:AIRCONDITIONING .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#ColdWater
-bc:ColdWater owl:sameAs ifc:DOMESTICCOLDWATER .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater> rdf:type owl:NamedIndividual ;
+                                                                                     owl:sameAs ifc:DOMESTICCOLDWATER .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Conveying
-bc:Conveying owl:sameAs ifc:CONVEYING .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying> rdf:type owl:NamedIndividual ;
+                                                                                     owl:sameAs ifc:CONVEYING .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#CoolingWater
-bc:CoolingWater owl:sameAs ifc:CHILLEDWATER .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater> rdf:type owl:NamedIndividual ;
+                                                                                        owl:sameAs ifc:CHILLEDWATER .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Electrical
-bc:Electrical owl:sameAs ifc:ELECTRICAL .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical> rdf:type owl:NamedIndividual ;
+                                                                                      owl:sameAs ifc:ELECTRICAL .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Exhaust
-bc:Exhaust owl:sameAs ifc:EXHAUST .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust> rdf:type owl:NamedIndividual ;
+                                                                                   owl:sameAs ifc:EXHAUST .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#FireProtection
-bc:FireProtection owl:sameAs ifc:FIREPROTECTION .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection
+<https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection> rdf:type owl:NamedIndividual ;
+                                                                                          owl:sameAs ifc:FIREPROTECTION .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#HVAC
-bc:HVAC owl:sameAs ifc:VENTILATION .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC
+<https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC> rdf:type owl:NamedIndividual ;
+                                                                                owl:sameAs ifc:VENTILATION .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Heating
-bc:Heating owl:sameAs ifc:HEATING .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Heating
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Heating> rdf:type owl:NamedIndividual ;
+                                                                                   owl:sameAs ifc:HEATING .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#HotWater
-bc:HotWater owl:sameAs ifc:DOMESTICHOTWATER .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater> rdf:type owl:NamedIndividual ;
+                                                                                    owl:sameAs ifc:DOMESTICHOTWATER .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Ventilation
-bc:Ventilation owl:sameAs ifc:VENTILATION .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation> rdf:type owl:NamedIndividual ;
+                                                                                       owl:sameAs ifc:VENTILATION .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Waste
-bc:Waste owl:sameAs ifc:SEWAGE .
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Waste
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Waste> rdf:type owl:NamedIndividual ;
+                                                                                 owl:sameAs ifc:SEWAGE .
 
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE
