@@ -1,0 +1,2570 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#"
+     xml:base="https://w3id.org/utoronto/ontologies/SeisFrontAlignment"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/utoronto/ontologies/SeisFrontAlignment">
+        <owl:imports rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/subset"/>
+        <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset"/>
+        <owl:imports rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents"/>
+        <owl:imports rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit"/>
+        <owl:imports rdf:resource="https://w3id.org/utoronto/ontologies/SeisFront"/>
+        <dc:creator>Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)</dc:creator>
+        <rdfs:label>Alignment Ontology SeisFront-ifcOWL</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasProperty">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue"/>
+            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Beam"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChiller -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChiller">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Chiller"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoil -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoil">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Coil"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcColumn -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcColumn">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Column"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#AirCompressor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#CoolingTower"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Covering"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Finishing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#CurtainWall"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Door"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctSegment -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctSegment">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Duct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement">
+        <owl:equivalentClass rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementType -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementType">
+        <owl:equivalentClass rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Fan"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurniture -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurniture">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Furnishing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Lighting"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#PendantLighting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeFitting -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeFitting">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Fitting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeSegment -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeSegment">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Pipe"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProduct -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProduct">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPump -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPump">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Pump"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Railing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Slab"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#VerticalTransportationDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcValve -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcValve">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Valve"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Window"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#AirCompressor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#AirCompressor"/>
+    
+
+
+    <!-- https://w3id.org/product#AirHandlingUnit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#AirHandlingUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Beam -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Beam"/>
+    
+
+
+    <!-- https://w3id.org/product#Brace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Brace">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Ceiling -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Ceiling">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Chiller -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Chiller"/>
+    
+
+
+    <!-- https://w3id.org/product#Coil -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Coil"/>
+    
+
+
+    <!-- https://w3id.org/product#Column -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Column"/>
+    
+
+
+    <!-- https://w3id.org/product#ColumnCovering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#ColumnCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#ControlPanel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#ControlPanel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#CoolingTower -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#CoolingTower"/>
+    
+
+
+    <!-- https://w3id.org/product#Covering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Covering"/>
+    
+
+
+    <!-- https://w3id.org/product#CurtainWall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#CurtainWall"/>
+    
+
+
+    <!-- https://w3id.org/product#Difusser -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Difusser">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#DistributionPanel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#DistributionPanel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Door -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Door"/>
+    
+
+
+    <!-- https://w3id.org/product#Duct -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Duct"/>
+    
+
+
+    <!-- https://w3id.org/product#DuctTransition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#DuctTransition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Elevator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Elevator">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Fan -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Fan"/>
+    
+
+
+    <!-- https://w3id.org/product#Finishing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Finishing"/>
+    
+
+
+    <!-- https://w3id.org/product#FireSprinklerDrop -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#FireSprinklerDrop">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Fitting -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Fitting"/>
+    
+
+
+    <!-- https://w3id.org/product#Floor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Floor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#FloorCovering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#FloorCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Foundation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Foundation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Furnishing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Furnishing"/>
+    
+
+
+    <!-- https://w3id.org/product#InsulationCovering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#InsulationCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Lift -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Lift">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Lighting -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Lighting"/>
+    
+
+
+    <!-- https://w3id.org/product#PendantLighting -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#PendantLighting"/>
+    
+
+
+    <!-- https://w3id.org/product#Pipe -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Pipe"/>
+    
+
+
+    <!-- https://w3id.org/product#Product -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Product"/>
+    
+
+
+    <!-- https://w3id.org/product#Pump -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Pump"/>
+    
+
+
+    <!-- https://w3id.org/product#Railing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Railing"/>
+    
+
+
+    <!-- https://w3id.org/product#Roof -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Roof">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#RoofCovering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#RoofCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Slab -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Slab"/>
+    
+
+
+    <!-- https://w3id.org/product#Stair -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Stair">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#StairStringer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#StairStringer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#StairThread -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#StairThread">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Valve -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Valve"/>
+    
+
+
+    <!-- https://w3id.org/product#VerticalTransportationDevice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#VerticalTransportationDevice"/>
+    
+
+
+    <!-- https://w3id.org/product#Wall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Wall">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#WallCovering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#WallCovering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering"/>
+                        <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Window -->
+
+
+    <owl:Class rdf:about="https://w3id.org/product#Window"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                                <owl:hasValue>AboveGround</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#External -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#External">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                                <owl:hasValue>IsExternal</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Internal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Internal">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                                <owl:hasValue>IsExternal</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE"/>
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                                <owl:hasValue>LoadBearing</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                                        <owl:hasValue>LoadBearing</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/product#Pipe"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasName"/>
+                        <owl:hasValue>Diameter</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit"/>
+                                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0635</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit"/>
+                                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0635</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit"/>
+                                <owl:hasValue rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0635</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeisFront#SteelMade -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeisFront#SteelMade">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Heating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Heating -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Heating"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Waste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Waste -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Waste"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION -->
+
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION">
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC"/>
+        <owl:sameAs rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Heating -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Heating"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Waste -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Waste"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,216 @@
+<https://w3id.org/utoronto/ontologies/IfcLit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/utoronto/ontologies/IfcLit> <http://www.w3.org/2002/07/owl#imports> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> .
+<https://w3id.org/utoronto/ontologies/IfcLit> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+<https://w3id.org/utoronto/ontologies/IfcLit> <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" .
+<https://w3id.org/utoronto/ontologies/IfcLit> <http://www.w3.org/2000/01/rdf-schema#label> "Light version of ifcOWL Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasProperty
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasType
+<https://w3id.org/utoronto/ontologies/IfcLit#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject
+<https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject> <http://www.w3.org/2000/01/rdf-schema#label> "IsDefinedBy" .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType
+<https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#isInGroup
+<https://w3id.org/utoronto/ontologies/IfcLit#isInGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> .
+<https://w3id.org/utoronto/ontologies/IfcLit#isInGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf
+<https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea
+<https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId
+<https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength
+<https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasName
+<https://w3id.org/utoronto/ontologies/IfcLit#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject
+<https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasTag
+<https://w3id.org/utoronto/ontologies/IfcLit#hasTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasTag> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasTag> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume
+<https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

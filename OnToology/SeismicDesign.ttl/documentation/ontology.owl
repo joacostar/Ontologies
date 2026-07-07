@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/utoronto/ontologies/SeismicDesign#"
+     xml:base="https://w3id.org/utoronto/ontologies/SeismicDesign"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign">
+        <owl:imports rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents"/>
+        <dc:creator>Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)</dc:creator>
+        <rdfs:label xml:lang="en">Ontology of Seismic Design</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#hasPipeBracingType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#hasPipeBracingType">
+        <rdfs:domain rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Piping"/>
+        <rdfs:range rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"/>
+        <rdfs:range rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignType"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#hasWallSupportType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#hasWallSupportType">
+        <rdfs:domain rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#Wall"/>
+        <rdfs:range rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#hasImportanceCoefficient -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#hasImportanceCoefficient">
+        <rdfs:domain rdf:resource="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Piping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Piping"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/BuildingComponents#Wall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/BuildingComponents#Wall"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#HighSeismicity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#HighSeismicity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD"/>
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE"/>
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#LowSeismicity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#LowSeismicity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA"/>
+                    <rdf:Description rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"/>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowFreeAbove -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowFreeAbove">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAbove -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAbove">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAboveWithReturnTrack -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAboveWithReturnTrack">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#FixedFixed -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#FixedFixed">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#Intermediate -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#Intermediate">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#Ordinary -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#Ordinary">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCC -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCC">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#Special -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#Special">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalAndLateral -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalAndLateral">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalOnly -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalOnly">
+        <rdf:type rdf:resource="https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
