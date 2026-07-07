@@ -1,0 +1,207 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Piping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Wall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ontology of Seismic Design"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowFreeAbove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAbove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAboveWithReturnTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#FixedFixed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#HighSeismicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#Intermediate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#LowSeismicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#Ordinary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#Special",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalAndLateral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalOnly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#hasImportanceCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#hasPipeBracingType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Piping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#hasWallSupportType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Wall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType"
+  } ]
+} ]

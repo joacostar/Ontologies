@@ -1,0 +1,2216 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/product#Duct"
+    }, {
+      "@id" : "https://w3id.org/product#DuctTransition"
+    }, {
+      "@id" : "https://w3id.org/product#Fitting"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#External"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isExternal"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasInfill"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Internal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isExternal"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isLoadBearing"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel"
+    }, {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid41"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isAboveGround"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid45"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Aluminium"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#MetallicMaterial"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isAboveGround"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid54"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Frame"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Frame"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isLoadBearing"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing"
+    }, {
+      "@id" : "_:genid71"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/product#Fitting"
+    }, {
+      "@id" : "https://w3id.org/product#Pipe"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing"
+    }, {
+      "@id" : "_:genid79"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent"
+    }, {
+      "@id" : "_:genid84"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isAboveGround"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Frame"
+    }, {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Panel"
+    }, {
+      "@id" : "_:genid91"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasFrame"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedFrame"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Diameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Thickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Aluminium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#MetallicMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#hasMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/product#AirCompressor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AirCompressor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#AirHandlingUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AirHandlingUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#AnnealedGlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Annealed Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#GlassPanel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#BatteryCharger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BatteryCharger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#ElectricityEmergencyComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#BatteryRack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BatteryRack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#ElectricityEmergencyComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Beam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#BeamToColumnConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BeamToColumnConnection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Connection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Brace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Brace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Ceiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ceiling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Chair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Furniture"
+  }, {
+    "@id" : "https://w3id.org/product#MovableFurnishing"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Chiller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chiller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Chimney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Closet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Furnishing"
+  }, {
+    "@id" : "https://w3id.org/product#Furniture"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Coil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Column",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ColumnCovering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ColumnSplice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ColumnSplice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Connection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Connection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ControlPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ControlPanel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#CoolingTower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CoolingTower"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Couch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Furniture"
+  }, {
+    "@id" : "https://w3id.org/product#MovableFurnishing"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Covering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Covering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#CurtainWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Damper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#DieselGenerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DieselGenerator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#MotorGenerator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Difusser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Difusser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#DistributionPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DistributionPanel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#DrySealant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Sealant"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Duct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#DuctTransition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ElectricityDistributionComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ElectricityDistributionComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ElectricityEmergencyComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ElectricityEmergencyComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Elevator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/product#VerticalTransportationDevice"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Equipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Fan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Finishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Finishing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#FireSprinklerDrop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FireSprinklerDrop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Fitting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Floor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#FloorCovering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Foundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Foundation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Furnishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/product#FurnishingComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FurnishingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Furniture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Furniture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#MovableFurnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#FurnitureContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FurnitureContent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#GlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#HVACFan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HVAC Fan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Fan"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#HVACFanInLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HVAC Fan In Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Fan"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#HeatExchanger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#HeatStrengthenedGlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Heat Strengthened Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#GlassPanel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Heater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Humidifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#InstrumentationComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InstrumentationComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#InsulatedGlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Insulated Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#GlassPanel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#InsulationCovering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#LaminatedGlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Laminated Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#GlassPanel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Lift",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/product#VerticalTransportationDevice"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Lighting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lighting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#LowVoltageSwitchGear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LowVoltageSwitchGear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#SwitchGear"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#MotorControlCenter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MotorControlCenter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#MotorGenerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MotorGenerator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#ElectricityEmergencyComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#MovableFurnishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MovableFurnishing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Furnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Parapet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parapet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#PendantLighting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PendantLighting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Lighting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Pipe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/product#Pump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Railing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#RaisedAccessFloor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Floor"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Floor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Ramp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#RecessedCeilingLighting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RecessedCeilingLighting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Lighting"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Roof",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#RoofCovering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Sealant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sealant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#ShadingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Slab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#SlabToColumnConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SlabToColumnConnection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Connection"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Stair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#StairStringer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stair stringer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#StairThread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stair thread"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Storage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#StorageRack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "StorageRack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Storage"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#SuspendedCeiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SuspendedCeiling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Ceiling"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#SwitchGear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SwitchGear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Table",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Furniture"
+  }, {
+    "@id" : "https://w3id.org/product#MovableFurnishing"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#TemperedGlassPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tempered Glass Panel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#GlassPanel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Transformer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Transformer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#VariableAirVolumeBox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VariableAirVolumeBox"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#VerticalTransportationDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Wall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#WallCovering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Covering"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#WetSealant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Sealant"
+  } ]
+}, {
+  "@id" : "https://w3id.org/product#Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ontology of Building Components"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset"
+  }, {
+    "@id" : "https://w3id.org/product#BuildingElements"
+  }, {
+    "@id" : "https://w3id.org/product#Furnishing"
+  }, {
+    "@id" : "https://w3id.org/product#MEP"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BelowGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/product#Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Clearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedSteelFramed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Ducting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ExteriorComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#InteriorComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#External",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Floor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Frame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Furnishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Heating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Inch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Infilled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#InteriorComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Internal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#KilogramPerMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Layer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid53"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid55"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid57"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid59"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid61"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MetalFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Metre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonstructuralComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Panel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#X-Bracing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Diameter"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Piping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid74"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#PoundPerFoot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SupportComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SquareInch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SquareMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Steam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SuperstructureComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SupportComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Thickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Thickness"
+  }, {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#VerticalBrace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Wall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithHoldowns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithoutHoldowns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Waste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WoodFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid86"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WoodPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#X-Bracing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasAspectRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isComponentOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasDouble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasInfill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasSealant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasSupport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isAboveGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isBelowGround"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isBelowGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isComponentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isExternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isInSystemOfType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepSystemType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isInternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isLoadBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#isMonolithic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+} ]

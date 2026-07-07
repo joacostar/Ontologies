@@ -1,0 +1,234 @@
+@prefix : <https://w3id.org/utoronto/ontologies/IfcLit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/utoronto/ontologies/IfcLit#> .
+
+<https://w3id.org/utoronto/ontologies/IfcLit> rdf:type owl:Ontology ;
+                                               owl:imports <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> ,
+                                                           <https://w3id.org/digitalconstruction/0.5/Materials/Subset> ;
+                                               <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                               rdfs:label "Light version of ifcOWL Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties> rdf:type owl:ObjectProperty ;
+                                                                                                         owl:inverseOf :isDefinedBy_IfcObject .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isMaterialOf ;
+             rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> ;
+             rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference
+:hasMaterialReference rdf:type owl:ObjectProperty ;
+                      rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> ;
+                      rdfs:range <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity
+:hasPhysicalComplexQuantity rdf:type owl:ObjectProperty ;
+                            rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> ;
+                            rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity
+:hasPhysicalSimpleQuantity rdf:type owl:ObjectProperty ;
+                           rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> ;
+                           rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasProperty
+:hasProperty rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> ;
+             rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue
+:hasPropertySingleValue rdf:type owl:ObjectProperty ;
+                        rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> ;
+                        rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> ;
+         rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject
+:isDefinedBy_IfcObject rdf:type owl:ObjectProperty ;
+                       rdfs:label "IsDefinedBy" .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType
+:isInDistributionSystemPredefinedType rdf:type owl:ObjectProperty ,
+                                               owl:IrreflexiveProperty ;
+                                      rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> ;
+                                      rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#isInGroup
+:isInGroup rdf:type owl:ObjectProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> ;
+           rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf
+:isMaterialOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea
+:hasAreaValue_IfcQuantityArea rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea> ;
+                              rdfs:range xsd:double .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId
+:hasGlobalId rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength
+:hasLengthValue_IfcQuantityLength rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength> ;
+                                  rdfs:range xsd:double .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity>
+                                     <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue>
+                                     <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot>
+                                   )
+                     ] ;
+         rdfs:range xsd:string .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject
+:hasObjectType_IfcObject rdf:type owl:DatatypeProperty ;
+                         rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> ;
+                         rdfs:range xsd:string .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasTag
+:hasTag rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement>
+                                    <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct>
+                                  )
+                    ] ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue
+:hasValue_IfcPropertySingleValue rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+
+
+###  https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume
+:hasVolumeValue_IfcQuantityVolume rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume> ;
+                                  rdfs:range xsd:double .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject> rdf:type owl:Class .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct> rdf:type owl:Class .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

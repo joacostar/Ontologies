@@ -1,0 +1,1628 @@
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <http://www.ontology-of-units-of-measure.org/resource/om-2/subset> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/utoronto/ontologies/BuildingComponents> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/utoronto/ontologies/IfcLit> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/utoronto/ontologies/SeisFront> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment> <http://www.w3.org/2000/01/rdf-schema#label> "Alignment Ontology SeisFront-ifcOWL" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute
+<https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference
+<https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasProperty
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute> .
+<https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment#hasUnitWithName> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPhysicalQuantityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf
+<https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasName
+<https://w3id.org/utoronto/ontologies/IfcLit#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue
+<https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBeam> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Beam> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChiller
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChiller> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Chiller> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoil
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoil> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Coil> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcColumn
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcColumn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcColumn> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Column> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#AirCompressor> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#CoolingTower> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Covering> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Finishing> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#CurtainWall> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Door> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctSegment
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctSegment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Duct> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementType
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElementType> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Fan> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurniture
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurniture> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Furnishing> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Lighting> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcLightFixture> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#PendantLighting> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeFitting
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeFitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeFitting> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Fitting> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeSegment
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPipeSegment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Pipe> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProduct
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProduct> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Product> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPump
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPump> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Pump> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Railing> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Slab> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#VerticalTransportationDevice> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcValve
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcValve> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Valve> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/product#Window> .
+# 
+# https://w3id.org/product#AirCompressor
+<https://w3id.org/product#AirCompressor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#AirHandlingUnit
+<https://w3id.org/product#AirHandlingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#AirHandlingUnit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryEquipment> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryEquipment> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Beam
+<https://w3id.org/product#Beam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Brace
+<https://w3id.org/product#Brace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Brace> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Ceiling
+<https://w3id.org/product#Ceiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Ceiling> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Chiller
+<https://w3id.org/product#Chiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Coil
+<https://w3id.org/product#Coil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Column
+<https://w3id.org/product#Column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#ColumnCovering
+<https://w3id.org/product#ColumnCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#ColumnCovering> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#ControlPanel
+<https://w3id.org/product#ControlPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#ControlPanel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcUnitaryControlElement> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcUnitaryControlElement> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#CoolingTower
+<https://w3id.org/product#CoolingTower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Covering
+<https://w3id.org/product#Covering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#CurtainWall
+<https://w3id.org/product#CurtainWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Difusser
+<https://w3id.org/product#Difusser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Difusser> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcAirTerminal> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAirTerminal> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#DistributionPanel
+<https://w3id.org/product#DistributionPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#DistributionPanel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcElectricDistributionBoard> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricDistributionBoard> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Door
+<https://w3id.org/product#Door> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Duct
+<https://w3id.org/product#Duct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#DuctTransition
+<https://w3id.org/product#DuctTransition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#DuctTransition> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid35 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcDuctFitting> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDuctFitting> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Elevator
+<https://w3id.org/product#Elevator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Elevator> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Fan
+<https://w3id.org/product#Fan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Finishing
+<https://w3id.org/product#Finishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#FireSprinklerDrop
+<https://w3id.org/product#FireSprinklerDrop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#FireSprinklerDrop> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcFireSuppressionTerminal> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFireSuppressionTerminal> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Fitting
+<https://w3id.org/product#Fitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Floor
+<https://w3id.org/product#Floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Floor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#FloorCovering
+<https://w3id.org/product#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#FloorCovering> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid58 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Foundation
+<https://w3id.org/product#Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Foundation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#unionOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid64 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFooting> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Furnishing
+<https://w3id.org/product#Furnishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#InsulationCovering
+<https://w3id.org/product#InsulationCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#InsulationCovering> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid69 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Lift
+<https://w3id.org/product#Lift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Lift> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid73 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcTransportElement> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Lighting
+<https://w3id.org/product#Lighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#PendantLighting
+<https://w3id.org/product#PendantLighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Pipe
+<https://w3id.org/product#Pipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Product
+<https://w3id.org/product#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Pump
+<https://w3id.org/product#Pump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Railing
+<https://w3id.org/product#Railing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Roof
+<https://w3id.org/product#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Roof> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid79 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcSlab> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSlab> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoof> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#RoofCovering
+<https://w3id.org/product#RoofCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#RoofCovering> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid89 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Slab
+<https://w3id.org/product#Slab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Stair
+<https://w3id.org/product#Stair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Stair> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#unionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStairFlight> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStair> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#StairStringer
+<https://w3id.org/product#StairStringer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#StairStringer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid96 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#StairThread
+<https://w3id.org/product#StairThread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#StairThread> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid100 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Valve
+<https://w3id.org/product#Valve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#VerticalTransportationDevice
+<https://w3id.org/product#VerticalTransportationDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#Wall
+<https://w3id.org/product#Wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#Wall> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#unionOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallStandardCase> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWallElementedCase> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWall> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/product#WallCovering
+<https://w3id.org/product#WallCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/product#WallCovering> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid108 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcCovering> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/product#Window
+<https://w3id.org/product#Window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround
+<https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid113 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid117 .
+_:genid117 <http://www.w3.org/2002/07/owl#hasValue> "AboveGround" .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent
+<https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType
+<https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Equipment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#unionOf> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMovingDevice> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcEnergyConversionDevice> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#External
+<https://w3id.org/utoronto/ontologies/BuildingComponents#External> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#External> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid122 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#hasValue> "IsExternal" .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Internal
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Internal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Internal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid128 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#hasValue> "IsExternal" .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
+_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid134 .
+_:genid134 <http://www.w3.org/2002/07/owl#oneOf> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid137 .
+_:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid138 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
+_:genid140 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid142 .
+_:genid142 <http://www.w3.org/2002/07/owl#hasValue> "LoadBearing" .
+_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid144 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid148 .
+_:genid148 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid149 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid151 .
+_:genid151 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid153 .
+_:genid153 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid154 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid156 .
+_:genid156 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid156 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid158 .
+_:genid158 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid159 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid161 .
+_:genid161 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid163 .
+_:genid163 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid164 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid166 .
+_:genid166 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid166 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid168 .
+_:genid168 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid169 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid171 .
+_:genid171 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid171 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid173 .
+_:genid173 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid174 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid176 .
+_:genid176 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid176 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid178 .
+_:genid178 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid179 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid180 .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid181 .
+_:genid181 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid181 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid183 .
+_:genid183 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid184 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid187 .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid185 .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid186 .
+_:genid186 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid186 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid183 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid188 .
+_:genid188 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid189 .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid189 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid190 .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid191 .
+_:genid191 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid191 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid188 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid193 .
+_:genid193 <http://www.w3.org/2002/07/owl#unionOf> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid195 .
+_:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid196 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid197 .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid198 .
+_:genid198 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid201 .
+_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid202 .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid202 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid204 .
+_:genid204 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete> .
+_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid206 .
+_:genid206 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid207 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid210 .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid208 .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid209 .
+_:genid209 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid211 .
+_:genid211 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid212 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid213 .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid214 .
+_:genid214 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid214 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid216 .
+_:genid216 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid217 .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid217 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid220 .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid218 .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid219 .
+_:genid219 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood> .
+<https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid219 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid216 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid221 .
+_:genid221 <http://www.w3.org/2002/07/owl#unionOf> _:genid224 .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid223 .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid222 .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBuildingElementProxy> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid225 .
+_:genid225 <http://www.w3.org/2002/07/owl#unionOf> _:genid242 .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid241 .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid240 .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid238 .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid237 .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid236 .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid235 .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid234 .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid233 .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid226 .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid227 .
+_:genid227 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid228 .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid228 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid231 .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid229 .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid230 .
+_:genid230 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid230 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid232 .
+_:genid232 <http://www.w3.org/2002/07/owl#hasValue> "LoadBearing" .
+_:genid232 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid227 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcWindow> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransportElement> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRailing> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnishingElement> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDoor> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionElement> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCurtainWall> .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCovering> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChimney> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid243 .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid243 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid250 .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid244 .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid245 .
+_:genid245 <http://www.w3.org/2002/07/owl#unionOf> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid246 .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid247 .
+_:genid247 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT> .
+_:genid247 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid249 .
+_:genid249 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE> .
+_:genid249 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#predefinedType_IfcMember> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMember> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid251 .
+_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid251 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid256 .
+_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid254 .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid252 .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid253 .
+_:genid253 <http://www.w3.org/2002/07/owl#hasValue> "Diameter" .
+_:genid253 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasName> .
+_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid255 .
+_:genid255 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/product#Pipe> .
+_:genid255 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/SeisFrontAlignment#isPropertyOf> .
+_:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue> .
+_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid257 .
+_:genid257 <http://www.w3.org/2002/07/owl#unionOf> _:genid272 .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid258 .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid259 .
+_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid259 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid271 .
+_:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid265 .
+_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid260 .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid261 .
+_:genid261 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid262 .
+_:genid262 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid263 .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid264 .
+_:genid264 <http://www.w3.org/2001/XMLSchema#minExclusive> "0.0635"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid262 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid261 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid266 .
+_:genid266 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid267 .
+_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid267 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid270 .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid268 .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid269 .
+_:genid269 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid269 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit> .
+_:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit> .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid266 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue> .
+_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> .
+_:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid273 .
+_:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid273 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid285 .
+_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid279 .
+_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid274 .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid275 .
+_:genid275 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid276 .
+_:genid276 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid277 .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid278 .
+_:genid278 <http://www.w3.org/2001/XMLSchema#minExclusive> "0.0635"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid276 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid275 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid280 .
+_:genid280 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid281 .
+_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid281 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid284 .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid282 .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid283 .
+_:genid283 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE> .
+_:genid283 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit> .
+_:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSIUnit> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid280 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPhysicalSimpleQuantity> .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> .
+_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid286 .
+_:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid286 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid295 .
+_:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid292 .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid287 .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid288 .
+_:genid288 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid289 .
+_:genid289 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid290 .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid291 .
+_:genid291 <http://www.w3.org/2001/XMLSchema#maxInclusive> "0.0635"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid289 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid288 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue> .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid293 .
+_:genid293 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid294 .
+_:genid294 <http://www.w3.org/2002/07/owl#hasValue> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE> .
+_:genid294 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#name_IfcSIUnit> .
+_:genid294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid293 <http://www.w3.org/2002/07/owl#onProperty> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#unit_IfcPropertySingleValue> .
+_:genid293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter> .
+_:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# https://w3id.org/utoronto/ontologies/SeisFront#SteelMade
+<https://w3id.org/utoronto/ontologies/SeisFront#SteelMade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/utoronto/ontologies/SeisFront#SteelMade> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid296 .
+_:genid296 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid297 .
+_:genid297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid297 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid300 .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid298 .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid299 .
+_:genid299 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel> .
+_:genid299 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference> .
+_:genid299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterial> .
+_:genid300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid296 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial> .
+_:genid296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRCONDITIONING> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#AIRHANDLER
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BASESLAB
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BRACE
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CEILING
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CHILLEDWATER> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CLADDING
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONTROLPANEL
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#CONVEYING> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DIFFUSER
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DISTRIBUTIONBOARD
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICCOLDWATER> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#DOMESTICHOTWATER> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELECTRICAL> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ELEVATOR
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#EXHAUST> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FIREPROTECTION> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOOR
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#FLOORING
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#HEATING> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Heating> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Heating
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#INSULATION
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LANDING
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#LIFTINGGEAR
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#METRE
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOF
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFING
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#ROOFTOPUNIT
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SEWAGE> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Waste> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Waste
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#SPRINKLER
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRINGER
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#STRUT
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#TRANSITION
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#VENTILATION> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#ColdFormedSteel
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Concrete
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Copper
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Glass
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Gypsum
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Masonry
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Metal
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Plaster
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Polymer
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#PrecastRCConcrete
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#ReinforcedConcrete
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Steel
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Stucco
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials/Subset#Wood
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning
+<https://w3id.org/utoronto/ontologies/BuildingComponents#AirConditioning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection
+<https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC
+<https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Heating
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Heating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater
+<https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/utoronto/ontologies/BuildingComponents#Waste
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Waste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,190 @@
+@prefix : <https://w3id.org/utoronto/ontologies/SeismicDesign#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/utoronto/ontologies/SeismicDesign#> .
+
+<https://w3id.org/utoronto/ontologies/SeismicDesign> rdf:type owl:Ontology ;
+                                                      owl:imports <https://w3id.org/utoronto/ontologies/BuildingComponents> ;
+                                                      <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                                      rdfs:label "Ontology of Seismic Design"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#hasPipeBracingType
+:hasPipeBracingType rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/utoronto/ontologies/BuildingComponents#Piping> ;
+                    rdfs:range :PipeBracingType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignCategory
+:hasSeismicDesignCategory rdf:type owl:ObjectProperty ;
+                          rdfs:domain <https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct> ;
+                          rdfs:range :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#hasSeismicDesignType
+:hasSeismicDesignType rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#hasWallSupportType
+:hasWallSupportType rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/utoronto/ontologies/BuildingComponents#Wall> ;
+                    rdfs:range :WallSupportType .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#hasImportanceCoefficient
+:hasImportanceCoefficient rdf:type owl:DatatypeProperty ;
+                          rdfs:domain <https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct> ;
+                          rdfs:range xsd:double .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct
+<https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct> rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Piping
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Piping> rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Wall
+<https://w3id.org/utoronto/ontologies/BuildingComponents#Wall> rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#HighSeismicity
+:HighSeismicity rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( :SDCD
+                                                  :SDCE
+                                                  :SDCF
+                                                )
+                                    ] ;
+                rdfs:subClassOf :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#LowSeismicity
+:LowSeismicity rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( :SDCA
+                                                 :SDCB
+                                               )
+                                   ] ;
+               rdfs:subClassOf :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#PipeBracingType
+:PipeBracingType rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory
+:SeismicDesignCategory rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignType
+:SeismicDesignType rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#WallSupportType
+:WallSupportType rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowFreeAbove
+:FixedBelowFreeAbove rdf:type owl:NamedIndividual ,
+                              :WallSupportType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAbove
+:FixedBelowSlidingAbove rdf:type owl:NamedIndividual ,
+                                 :WallSupportType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#FixedBelowSlidingAboveWithReturnTrack
+:FixedBelowSlidingAboveWithReturnTrack rdf:type owl:NamedIndividual ,
+                                                :WallSupportType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#FixedFixed
+:FixedFixed rdf:type owl:NamedIndividual ,
+                     :WallSupportType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#Intermediate
+:Intermediate rdf:type owl:NamedIndividual ,
+                       :SeismicDesignType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#Ordinary
+:Ordinary rdf:type owl:NamedIndividual ,
+                   :SeismicDesignType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCA
+:SDCA rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCB
+:SDCB rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCC
+:SDCC rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCD
+:SDCD rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCE
+:SDCE rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#SDCF
+:SDCF rdf:type owl:NamedIndividual ,
+               :SeismicDesignCategory .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#Special
+:Special rdf:type owl:NamedIndividual ,
+                  :SeismicDesignType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalAndLateral
+:VerticalAndLateral rdf:type owl:NamedIndividual ,
+                             :PipeBracingType .
+
+
+###  https://w3id.org/utoronto/ontologies/SeismicDesign#VerticalOnly
+:VerticalOnly rdf:type owl:NamedIndividual ,
+                       :PipeBracingType .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,3424 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://dbpedia.org/resource/Pipe_(fluid_conveyance)"
+    },
+    "E2022.105a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.105a"
+    },
+    "D3041.103a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.103a"
+    },
+    "C2011.02" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.02"
+    },
+    "B3031.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.002b"
+    },
+    "B202" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B202"
+    },
+    "D2022.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.013b"
+    },
+    "B1044.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.021"
+    },
+    "B2022.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.002"
+    },
+    "D5012.023h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023h"
+    },
+    "B1042.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.012a"
+    },
+    "B1033.042c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.042c"
+    },
+    "B1035" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035"
+    },
+    "D5092.033f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033f"
+    },
+    "D3041.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.001c"
+    },
+    "C3021.001h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001h"
+    },
+    "E2022.104a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.104a"
+    },
+    "B1033.031c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.031c"
+    },
+    "D2051.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.021b"
+    },
+    "B1044.063" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.063"
+    },
+    "B3031.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.001b"
+    },
+    "B1061.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.011a"
+    },
+    "AirDistributionComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent"
+    },
+    "D2022.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.011a"
+    },
+    "B1042" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042"
+    },
+    "B1041.003a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.003a"
+    },
+    "B2023.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.002"
+    },
+    "B2022.040" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.040"
+    },
+    "D1014" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D1014"
+    },
+    "D3031.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012a"
+    },
+    "D2061.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.013a"
+    },
+    "B1051.014" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.014"
+    },
+    "D2022.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.021a"
+    },
+    "C2011.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.031a"
+    },
+    "C1011.01" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.01"
+    },
+    "B2011.02" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.02"
+    },
+    "B1033.053c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.053c"
+    },
+    "Meter" : {
+      "@id" : "https://w3id.org/product#Meter"
+    },
+    "B1031.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.021b"
+    },
+    "D5011.013g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013g"
+    },
+    "D5012.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.021b"
+    },
+    "WallWithHoldowns" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithHoldowns"
+    },
+    "Unit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#Unit"
+    },
+    "MadeOfCopper" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper"
+    },
+    "Furniture" : {
+      "@id" : "https://w3id.org/product#Furniture"
+    },
+    "D2022.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.012"
+    },
+    "D2021.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.022"
+    },
+    "C3011.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.001b"
+    },
+    "GreaterThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#GreaterThan2.5Inches"
+    },
+    "B1044.082" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.082"
+    },
+    "F1012.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#F1012.001"
+    },
+    "C2011.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.021b"
+    },
+    "WallThickness" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#WallThickness"
+    },
+    "B1049.041b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.041b"
+    },
+    "B1042.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.022a"
+    },
+    "D3032.012l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012l"
+    },
+    "B1033.061a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.061a"
+    },
+    "D30" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D30"
+    },
+    "C2011.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.021a"
+    },
+    "B1049.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.021b"
+    },
+    "B1033.101c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.101c"
+    },
+    "Union" : {
+      "@id" : "https://w3id.org/product#Union"
+    },
+    "D3032.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.011c"
+    },
+    "Storage" : {
+      "@id" : "https://w3id.org/product#Storage"
+    },
+    "E2022.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.023"
+    },
+    "D3031.022i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022i"
+    },
+    "SquarePrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#SquarePrefixedMetre"
+    },
+    "D303" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D303"
+    },
+    "HorizontalArea" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#HorizontalArea"
+    },
+    "B105" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B105"
+    },
+    "D3032.013e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013e"
+    },
+    "D205" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D205"
+    },
+    "D5092.032g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032g"
+    },
+    "D3031.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.011b"
+    },
+    "C3021.001i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001i"
+    },
+    "D3067.012c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3067.012c"
+    },
+    "B1049.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.022a"
+    },
+    "D3031.012d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012d"
+    },
+    "D2051.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.024a"
+    },
+    "D5092.033h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033h"
+    },
+    "Brace" : {
+      "@id" : "https://w3id.org/product#Brace"
+    },
+    "Sealant" : {
+      "@id" : "https://w3id.org/product#Sealant"
+    },
+    "Bend" : {
+      "@id" : "https://w3id.org/product#Bend"
+    },
+    "Stair" : {
+      "@id" : "https://w3id.org/product#Stair"
+    },
+    "Roof" : {
+      "@id" : "https://w3id.org/product#Roof"
+    },
+    "B2011.121" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.121"
+    },
+    "InstrumentationComponent" : {
+      "@id" : "https://w3id.org/product#InstrumentationComponent"
+    },
+    "D2022.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.024a"
+    },
+    "E2022.125b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.125b"
+    },
+    "C1011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011"
+    },
+    "D2021.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.013a"
+    },
+    "B2022.052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.052"
+    },
+    "D2051.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.012b"
+    },
+    "MotorControlCenter" : {
+      "@id" : "https://w3id.org/product#MotorControlCenter"
+    },
+    "D203" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D203"
+    },
+    "D3041.001d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.001d"
+    },
+    "Lighting" : {
+      "@id" : "https://w3id.org/product#Lighting"
+    },
+    "BatteryRack" : {
+      "@id" : "https://w3id.org/product#BatteryRack"
+    },
+    "D2031.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.021a"
+    },
+    "InsulatedGlassPanel" : {
+      "@id" : "https://w3id.org/product#InsulatedGlassPanel"
+    },
+    "B1041.003b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.003b"
+    },
+    "D2061.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.023b"
+    },
+    "D3031.012e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012e"
+    },
+    "CheckDamper" : {
+      "@id" : "https://w3id.org/product#CheckDamper"
+    },
+    "SafetyValve" : {
+      "@id" : "https://w3id.org/product#SafetyValve"
+    },
+    "D5012.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.013a"
+    },
+    "B1041.082b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.082b"
+    },
+    "B1041.061a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.061a"
+    },
+    "B2023.057" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.057"
+    },
+    "B1042.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.022b"
+    },
+    "B2022.034" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.034"
+    },
+    "B2011.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.021a"
+    },
+    "D3032.012h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012h"
+    },
+    "AreaUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#AreaUnit"
+    },
+    "D2051.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.011a"
+    },
+    "C3011.003d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.003d"
+    },
+    "D3052.013l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013l"
+    },
+    "CheckValve" : {
+      "@id" : "https://w3id.org/product#CheckValve"
+    },
+    "B1051.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.002"
+    },
+    "B1049.042b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.042b"
+    },
+    "MepComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent"
+    },
+    "B2023.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.021"
+    },
+    "B1049.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.021a"
+    },
+    "B1041.101a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.101a"
+    },
+    "C3021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021"
+    },
+    "E2022.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.013"
+    },
+    "WallInfill" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallInfill"
+    },
+    "D3052.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013b"
+    },
+    "RaisedAccessFloor" : {
+      "@id" : "https://w3id.org/product#RaisedAccessFloor"
+    },
+    "C3032.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.001c"
+    },
+    "B2022.053" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.053"
+    },
+    "C3011.002d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.002d"
+    },
+    "B2022.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.023"
+    },
+    "D2021.01" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.01"
+    },
+    "B1044.102" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.102"
+    },
+    "B1042.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.001b"
+    },
+    "D2051.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.022a"
+    },
+    "B1041.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.013b"
+    },
+    "ColumnCovering" : {
+      "@id" : "https://w3id.org/product#ColumnCovering"
+    },
+    "D3032.013f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013f"
+    },
+    "B1041.123a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.123a"
+    },
+    "E2022.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.011"
+    },
+    "Thickness" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Thickness"
+    },
+    "D3031.023d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023d"
+    },
+    "B1041.112b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.112b"
+    },
+    "B2023.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.011"
+    },
+    "D5092.033c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033c"
+    },
+    "D3052.011d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.011d"
+    },
+    "B1031.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.011b"
+    },
+    "B2011.0" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.0"
+    },
+    "B1041.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.031b"
+    },
+    "E2022.114a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.114a"
+    },
+    "C20" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C20"
+    },
+    "B2022.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.021"
+    },
+    "B1041.032a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.032a"
+    },
+    "Material" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material"
+    },
+    "Humidifier" : {
+      "@id" : "https://w3id.org/product#Humidifier"
+    },
+    "B2011.00" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.00"
+    },
+    "C3011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011"
+    },
+    "B1044.043" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.043"
+    },
+    "B1033.073a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.073a"
+    },
+    "B2022.201" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.201"
+    },
+    "D3052.013i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013i"
+    },
+    "B1044.053" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.053"
+    },
+    "D2051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051"
+    },
+    "D5011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011"
+    },
+    "HVACFan" : {
+      "@id" : "https://w3id.org/product#HVACFan"
+    },
+    "Equipment" : {
+      "@id" : "https://w3id.org/product#Equipment"
+    },
+    "B1033.033b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.033b"
+    },
+    "ShadingDevice" : {
+      "@id" : "https://w3id.org/product#ShadingDevice"
+    },
+    "D2022.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.023a"
+    },
+    "B1051.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.012"
+    },
+    "B1033.022c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.022c"
+    },
+    "B2011.131" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.131"
+    },
+    "C3011.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.002a"
+    },
+    "Diameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset/Diameter"
+    },
+    "D4011.032a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.032a"
+    },
+    "B1044.003" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.003"
+    },
+    "D3041.022d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.022d"
+    },
+    "D3031.011d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.011d"
+    },
+    "B1033.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.002b"
+    },
+    "D3052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052"
+    },
+    "B3031.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.001a"
+    },
+    "IsInDomesticPotableWater" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#IsInDomesticPotableWater"
+    },
+    "B2011.102" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.102"
+    },
+    "B1041.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.001a"
+    },
+    "D5092.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.011a"
+    },
+    "E2022.112a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.112a"
+    },
+    "D3032.013h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013h"
+    },
+    "B1033.043b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.043b"
+    },
+    "StairThread" : {
+      "@id" : "https://w3id.org/product#StairThread"
+    },
+    "D3031.013k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013k"
+    },
+    "StorageRack" : {
+      "@id" : "https://w3id.org/product#StorageRack"
+    },
+    "MadeOfGypsum" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum"
+    },
+    "Product" : {
+      "@id" : "https://w3id.org/product#Product"
+    },
+    "MadeOfSteel" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel"
+    },
+    "B1051.024" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.024"
+    },
+    "D3032.011d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.011d"
+    },
+    "Between250And1000SquareFoot" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#Between250And1000SquareFoot"
+    },
+    "LessThan4.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#LessThan4.5Inches"
+    },
+    "B1042.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.012b"
+    },
+    "VerticalBrace" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#VerticalBrace"
+    },
+    "D2022.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.013"
+    },
+    "D3031.012j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012j"
+    },
+    "GateValve" : {
+      "@id" : "https://w3id.org/product#GateValve"
+    },
+    "C3021.001f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001f"
+    },
+    "InsulationCovering" : {
+      "@id" : "https://w3id.org/product#InsulationCovering"
+    },
+    "D5012.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023b"
+    },
+    "C3032.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.001"
+    },
+    "TemperedGlassPanel" : {
+      "@id" : "https://w3id.org/product#TemperedGlassPanel"
+    },
+    "B1033.062a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.062a"
+    },
+    "D3031.022e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022e"
+    },
+    "E2022.114b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.114b"
+    },
+    "C3021.001p" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001p"
+    },
+    "B2022.032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.032"
+    },
+    "HasPipeDiameterGreaterThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#HasPipeDiameterGreaterThan2.5Inches"
+    },
+    "D3041.041a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.041a"
+    },
+    "WallCovering" : {
+      "@id" : "https://w3id.org/product#WallCovering"
+    },
+    "B1044.051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.051"
+    },
+    "B1033.032c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.032c"
+    },
+    "ColdFormedFrame" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ColdFormedFrame"
+    },
+    "D3031.012g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012g"
+    },
+    "B1041.103a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.103a"
+    },
+    "B1041.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.021b"
+    },
+    "D2031.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.012b"
+    },
+    "B1051.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.022"
+    },
+    "B1035.051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.051"
+    },
+    "B1042.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.011a"
+    },
+    "D2022.02" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.02"
+    },
+    "B107" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B107"
+    },
+    "D5092.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.013b"
+    },
+    "SupportComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SupportComponent"
+    },
+    "D5092.032l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032l"
+    },
+    "E2022.103b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.103b"
+    },
+    "E2022.010" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.010"
+    },
+    "Pipe" : {
+      "@id" : "https://w3id.org/product#Pipe"
+    },
+    "D2021.014a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.014a"
+    },
+    "WoodFrame" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WoodFrame"
+    },
+    "C3011.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.002b"
+    },
+    "X-Bracing" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#X-Bracing"
+    },
+    "B1041.071b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.071b"
+    },
+    "D5092.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.031a"
+    },
+    "MovableFurnishing" : {
+      "@id" : "https://w3id.org/product#MovableFurnishing"
+    },
+    "WoodPanel" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WoodPanel"
+    },
+    "B1041.132a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.132a"
+    },
+    "D3032.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.011a"
+    },
+    "B1033.051c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.051c"
+    },
+    "B1033.052a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.052a"
+    },
+    "EqualTo0.41Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.41Inches"
+    },
+    "B2023.053" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.053"
+    },
+    "D2051.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.023a"
+    },
+    "C10" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C10"
+    },
+    "B1041.093b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.093b"
+    },
+    "D3032.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.011b"
+    },
+    "D2061.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.024a"
+    },
+    "B1041.092a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.092a"
+    },
+    "B1041.032b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.032b"
+    },
+    "B1035.062b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.062b"
+    },
+    "D3031.012f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012f"
+    },
+    "IsInDomesticWater" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#IsInDomesticWater"
+    },
+    "D3031.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022b"
+    },
+    "SubmersiblePump" : {
+      "@id" : "https://w3id.org/product#SubmersiblePump"
+    },
+    "D2021.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.011"
+    },
+    "B1061.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.001a"
+    },
+    "B1044.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.022"
+    },
+    "MotorGenerator" : {
+      "@id" : "https://w3id.org/product#MotorGenerator"
+    },
+    "C3027.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3027.001"
+    },
+    "DynamicCommissioningValve" : {
+      "@id" : "https://w3id.org/product#DynamicCommissioningValve"
+    },
+    "B1044" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044"
+    },
+    "D3031.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.021c"
+    },
+    "Duct" : {
+      "@id" : "https://w3id.org/product#Duct"
+    },
+    "HeatExchanger" : {
+      "@id" : "https://w3id.org/product#HeatExchanger"
+    },
+    "FixedPoint" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#FixedPoint"
+    },
+    "HVACFanInLine" : {
+      "@id" : "https://w3id.org/product#HVACFanInLine"
+    },
+    "SlabToColumnConnection" : {
+      "@id" : "https://w3id.org/product#SlabToColumnConnection"
+    },
+    "B1041.063b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.063b"
+    },
+    "B2011.01" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.01"
+    },
+    "D2022.01" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.01"
+    },
+    "D4011.041a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.041a"
+    },
+    "A20" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#A20"
+    },
+    "B1041.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.002b"
+    },
+    "D2061.014a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.014a"
+    },
+    "D3031.013l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013l"
+    },
+    "WallThicknessLessThan4.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#WallThicknessLessThan4.5Inches"
+    },
+    "E2022.106b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.106b"
+    },
+    "RecessedCeilingLighting" : {
+      "@id" : "https://w3id.org/product#RecessedCeilingLighting"
+    },
+    "LowSeismicity" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#LowSeismicity"
+    },
+    "D4011.033a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.033a"
+    },
+    "C2011.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.001a"
+    },
+    "D3052.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.011b"
+    },
+    "B1033.053a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.053a"
+    },
+    "MadeOfWood" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood"
+    },
+    "B2023.054" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.054"
+    },
+    "D3032.012d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012d"
+    },
+    "B2023.056" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.056"
+    },
+    "D5012.031c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.031c"
+    },
+    "C3032.003c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.003c"
+    },
+    "D5092.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.031b"
+    },
+    "B1033.073c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.073c"
+    },
+    "B2022.083" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.083"
+    },
+    "D5011.013i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013i"
+    },
+    "D5012.031d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.031d"
+    },
+    "D5012.033l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033l"
+    },
+    "B2022.036" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.036"
+    },
+    "B1044.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.013"
+    },
+    "B1041.122a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.122a"
+    },
+    "EqualTo0.50Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.50Inches"
+    },
+    "D5012.033h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033h"
+    },
+    "SingularUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#SingularUnit"
+    },
+    "B2022.05" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.05"
+    },
+    "B2022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022"
+    },
+    "B1044.103" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.103"
+    },
+    "B104" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B104"
+    },
+    "B1061.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.021a"
+    },
+    "B1044.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.001"
+    },
+    "B1035.041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.041"
+    },
+    "Damper" : {
+      "@id" : "https://w3id.org/product#Damper"
+    },
+    "B1041.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.031a"
+    },
+    "D2061.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.012a"
+    },
+    "B1033.111c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.111c"
+    },
+    "PendantLighting" : {
+      "@id" : "https://w3id.org/product#PendantLighting"
+    },
+    "C1011.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.001b"
+    },
+    "B1041.072a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.072a"
+    },
+    "D3031.012l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012l"
+    },
+    "D3052.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.011a"
+    },
+    "B303" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B303"
+    },
+    "BuildingComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent"
+    },
+    "D4011.064a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.064a"
+    },
+    "Closet" : {
+      "@id" : "http://dbpedia.org/resource/Closet"
+    },
+    "C3021.001n" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001n"
+    },
+    "Cross" : {
+      "@id" : "https://w3id.org/product#Cross"
+    },
+    "D3031.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013c"
+    },
+    "D2021.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.023a"
+    },
+    "B1035.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.011"
+    },
+    "D4011.054a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.054a"
+    },
+    "C102" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C102"
+    },
+    "D2021.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.024a"
+    },
+    "D20" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D20"
+    },
+    "D2051.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.023b"
+    },
+    "D40" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D40"
+    },
+    "LayerSet" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#LayerSet"
+    },
+    "MetalFrame" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MetalFrame"
+    },
+    "D5012.023l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023l"
+    },
+    "D5092.032a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032a"
+    },
+    "E2022.105b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.105b"
+    },
+    "D5012.023i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023i"
+    },
+    "B1044.042" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.042"
+    },
+    "E2022.125a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.125a"
+    },
+    "B1041.043b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.043b"
+    },
+    "D2022.014b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.014b"
+    },
+    "D3041.041b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.041b"
+    },
+    "ControlPanel" : {
+      "@id" : "https://w3id.org/product#ControlPanel"
+    },
+    "B1033.003a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.003a"
+    },
+    "B1031.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.021a"
+    },
+    "C1011.001d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.001d"
+    },
+    "B1049.003b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.003b"
+    },
+    "D2031.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.013b"
+    },
+    "B1041.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.002a"
+    },
+    "B2011.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.011b"
+    },
+    "B1042.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.021a"
+    },
+    "D2031.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.023a"
+    },
+    "C3011.003c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.003c"
+    },
+    "Length" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#Length"
+    },
+    "B1051.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.001"
+    },
+    "PrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#PrefixedMetre"
+    },
+    "Clearance" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Clearance"
+    },
+    "D5092.033d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033d"
+    },
+    "HasPipeDiameterLessThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#HasPipeDiameterLessThan2.5Inches"
+    },
+    "NonLoadBearing" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonLoadBearing"
+    },
+    "B1035.042" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.042"
+    },
+    "B1061.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.021b"
+    },
+    "Finishing" : {
+      "@id" : "https://w3id.org/product#Finishing"
+    },
+    "C1011.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.001a"
+    },
+    "B1041.043a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.043a"
+    },
+    "D5092.033e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033e"
+    },
+    "D3041.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.002b"
+    },
+    "D3032.012c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012c"
+    },
+    "D5012.033j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033j"
+    },
+    "B1033" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033"
+    },
+    "D5092.032c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032c"
+    },
+    "B1051.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.023"
+    },
+    "B2011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011"
+    },
+    "D2022.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.011"
+    },
+    "LessThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#LessThan2.5Inches"
+    },
+    "D2061.024b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.024b"
+    },
+    "B2022.081" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.081"
+    },
+    "B1033.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.001c"
+    },
+    "D3031.013i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013i"
+    },
+    "D3031.023k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023k"
+    },
+    "B1049.041a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.041a"
+    },
+    "B201" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B201"
+    },
+    "D2031.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.011b"
+    },
+    "FloorCovering" : {
+      "@id" : "https://w3id.org/product#FloorCovering"
+    },
+    "B1071.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.002"
+    },
+    "EqualTo0.25Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.25Inches"
+    },
+    "D2031.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.021b"
+    },
+    "C3021.001k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001k"
+    },
+    "D3041.103c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.103c"
+    },
+    "B1051.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.011"
+    },
+    "D5011.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013b"
+    },
+    "B1041.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.022a"
+    },
+    "B2023.034" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.034"
+    },
+    "B1033.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.011b"
+    },
+    "D5012.023k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023k"
+    },
+    "B1044.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.031"
+    },
+    "B1033.033a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.033a"
+    },
+    "B1041.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.023b"
+    },
+    "D5011.013h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013h"
+    },
+    "B1041.051a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.051a"
+    },
+    "D3041.021d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.021d"
+    },
+    "D2022.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.011b"
+    },
+    "B1042.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.021b"
+    },
+    "BelowGround" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BelowGround"
+    },
+    "E2022.124b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.124b"
+    },
+    "B1071.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.011"
+    },
+    "D5012.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.013b"
+    },
+    "Ducting" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Ducting"
+    },
+    "IsInDomesticHotWater" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#IsInDomesticHotWater"
+    },
+    "B1071.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.031"
+    },
+    "C3021.001o" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001o"
+    },
+    "D3031.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.011c"
+    },
+    "Piping" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Piping"
+    },
+    "D2022.024b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.024b"
+    },
+    "E2022.102a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.102a"
+    },
+    "D2061.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.012b"
+    },
+    "D206" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D206"
+    },
+    "A10" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#A10"
+    },
+    "B1033.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.002a"
+    },
+    "StaticCommissioningValve" : {
+      "@id" : "https://w3id.org/product#StaticCommissioningValve"
+    },
+    "D3031.013g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013g"
+    },
+    "C3032.003" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.003"
+    },
+    "D2051.014a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.014a"
+    },
+    "D5012.023j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023j"
+    },
+    "D3041.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.001b"
+    },
+    "B1041.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.023a"
+    },
+    "Furnishing" : {
+      "@id" : "https://w3id.org/product#Furnishing"
+    },
+    "D1014.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D1014.022"
+    },
+    "HeatStrengthenedGlassPanel" : {
+      "@id" : "https://w3id.org/product#HeatStrengthenedGlassPanel"
+    },
+    "D3067.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3067.012a"
+    },
+    "D5012.033g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033g"
+    },
+    "DrySealant" : {
+      "@id" : "https://w3id.org/product#DrySealant"
+    },
+    "C1011.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.001c"
+    },
+    "D305" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D305"
+    },
+    "D5092.032i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032i"
+    },
+    "B1051.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.021"
+    },
+    "D3031.022k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022k"
+    },
+    "B1033.041a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.041a"
+    },
+    "B1033.071c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.071c"
+    },
+    "D3041.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.022a"
+    },
+    "D3041.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.012a"
+    },
+    "B1051.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.013"
+    },
+    "D5012.033k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033k"
+    },
+    "F10" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#F10"
+    },
+    "C2011.01" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.01"
+    },
+    "B2022.03" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.03"
+    },
+    "D3032.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012a"
+    },
+    "B1033.041c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.041c"
+    },
+    "D3032.012k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012k"
+    },
+    "D5092.032b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032b"
+    },
+    "B1041.121b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.121b"
+    },
+    "C1011.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.011a"
+    },
+    "WaterDistributionComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent"
+    },
+    "D2021.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.023b"
+    },
+    "D2021.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.013"
+    },
+    "B1033.071b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.071b"
+    },
+    "D2022.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.022"
+    },
+    "C3034.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3034.001"
+    },
+    "D5011.013e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013e"
+    },
+    "C3032.003d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.003d"
+    },
+    "D4011.073a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.073a"
+    },
+    "D5092.033a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033a"
+    },
+    "B1052.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.002"
+    },
+    "D3031.023f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023f"
+    },
+    "D5012.013d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.013d"
+    },
+    "B1044.052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.052"
+    },
+    "B1049.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.011"
+    },
+    "D4011.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.021a"
+    },
+    "B2022.101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.101"
+    },
+    "C3021.001g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001g"
+    },
+    "Difusser" : {
+      "@id" : "https://w3id.org/product#Difusser"
+    },
+    "D401" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D401"
+    },
+    "BuildingObject" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Entities#BuildingObject"
+    },
+    "B3011.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3011.012"
+    },
+    "StructuralComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent"
+    },
+    "MaterialEntity" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Entities#MaterialEntity"
+    },
+    "B1041.111a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.111a"
+    },
+    "Lift" : {
+      "@id" : "https://w3id.org/product#Lift"
+    },
+    "B2022.084" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.084"
+    },
+    "B3041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3041"
+    },
+    "LengthUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#LengthUnit"
+    },
+    "B1033.042a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.042a"
+    },
+    "D2021.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.013b"
+    },
+    "D5012.023e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023e"
+    },
+    "B1033.023c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.023c"
+    },
+    "D2061.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.011a"
+    },
+    "MetallicMaterial" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#MetallicMaterial"
+    },
+    "B1041.081a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.081a"
+    },
+    "B1041.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.012a"
+    },
+    "B1049.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.022b"
+    },
+    "D2021.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.012b"
+    },
+    "D5092.032f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032f"
+    },
+    "B1033.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.022a"
+    },
+    "D3031.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.021b"
+    },
+    "C2011.00" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.00"
+    },
+    "B1049.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.002b"
+    },
+    "B2022.061" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.061"
+    },
+    "B1071.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.012"
+    },
+    "C3021.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001a"
+    },
+    "FireSprinklerDrop" : {
+      "@id" : "https://w3id.org/product#FireSprinklerDrop"
+    },
+    "B3011.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3011.011"
+    },
+    "D101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D101"
+    },
+    "C2011.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.001b"
+    },
+    "B1041.131b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.131b"
+    },
+    "B1033.043a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.043a"
+    },
+    "D3032.013d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013d"
+    },
+    "B1033.063c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.063c"
+    },
+    "D3041.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.011c"
+    },
+    "B1041.121a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.121a"
+    },
+    "Covering" : {
+      "@id" : "https://w3id.org/product#Covering"
+    },
+    "B1033.111b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.111b"
+    },
+    "B1041.053b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.053b"
+    },
+    "B1033.033c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.033c"
+    },
+    "D3032.013i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013i"
+    },
+    "B1033.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.031b"
+    },
+    "MadeOfMasonry" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry"
+    },
+    "B2022.08" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.08"
+    },
+    "Transformer" : {
+      "@id" : "https://w3id.org/product#Transformer"
+    },
+    "B1052.014" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.014"
+    },
+    "D3031.013f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013f"
+    },
+    "D3031.012h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012h"
+    },
+    "D3031.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013a"
+    },
+    "BuildingProduct" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingProduct"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Building"
+    },
+    "D3031.022d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022d"
+    },
+    "Layer" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Layer"
+    },
+    "B1041.052a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.052a"
+    },
+    "B1044.092" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.092"
+    },
+    "B1041.112a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.112a"
+    },
+    "B1042.002b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.002b"
+    },
+    "D3041.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.021a"
+    },
+    "B1033.052b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.052b"
+    },
+    "D3041.032a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.032a"
+    },
+    "B1044.041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.041"
+    },
+    "B1041.033a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.033a"
+    },
+    "Ceiling" : {
+      "@id" : "https://w3id.org/product#Ceiling"
+    },
+    "BuildingIntegratedDuct" : {
+      "@id" : "https://w3id.org/product#BuildingIntegratedDuct"
+    },
+    "LowVoltageSwitchGear" : {
+      "@id" : "https://w3id.org/product#LowVoltageSwitchGear"
+    },
+    "B1044.083" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.083"
+    },
+    "E" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E"
+    },
+    "B1044.062" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.062"
+    },
+    "D3031.012c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012c"
+    },
+    "D3032.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013a"
+    },
+    "Door" : {
+      "@id" : "https://w3id.org/product#Door"
+    },
+    "D3031.022l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022l"
+    },
+    "B1033.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.001a"
+    },
+    "VerticalTransportationDevice" : {
+      "@id" : "https://w3id.org/product#VerticalTransportationDevice"
+    },
+    "D2031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031"
+    },
+    "B1044.033" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.033"
+    },
+    "C3021.001l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001l"
+    },
+    "D2051.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.013b"
+    },
+    "B3011.014" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3011.014"
+    },
+    "D3052.013k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013k"
+    },
+    "D3032.012i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012i"
+    },
+    "Couch" : {
+      "@id" : "http://dbpedia.org/resource/Couch"
+    },
+    "C2011.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.021c"
+    },
+    "C303" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C303"
+    },
+    "C" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C"
+    },
+    "C3011.003a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.003a"
+    },
+    "D4011.042a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.042a"
+    },
+    "B1052.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.012"
+    },
+    "D2061.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.013b"
+    },
+    "B2022.039" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.039"
+    },
+    "C30" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C30"
+    },
+    "D5012.033d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033d"
+    },
+    "D2022.014a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.014a"
+    },
+    "Weight" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Weight"
+    },
+    "CrossFlowHeatExchanger" : {
+      "@id" : "https://w3id.org/product#CrossFlowHeatExchanger"
+    },
+    "C301" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C301"
+    },
+    "DistributionPanel" : {
+      "@id" : "https://w3id.org/product#DistributionPanel"
+    },
+    "TermostaticValve" : {
+      "@id" : "https://w3id.org/product#TermostaticValve"
+    },
+    "B1033.062c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.062c"
+    },
+    "D5012.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.021a"
+    },
+    "B1031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031"
+    },
+    "B2022.072" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.072"
+    },
+    "D3041.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.022b"
+    },
+    "D3041.103b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.103b"
+    },
+    "B2011.101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.101"
+    },
+    "B1041.071a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.071a"
+    },
+    "E2022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022"
+    },
+    "C3027.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3027.002"
+    },
+    "D2051.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.021a"
+    },
+    "EqualTo0.59Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.59Inches"
+    },
+    "F" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#F"
+    },
+    "B1041.042a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.042a"
+    },
+    "D3031.012k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012k"
+    },
+    "B1042.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.001a"
+    },
+    "B2011.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.001"
+    },
+    "D3031.023l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023l"
+    },
+    "D3032.013k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013k"
+    },
+    "ComponentAttribute" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ComponentAttribute"
+    },
+    "MadeOfColdFormedSteel" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel"
+    },
+    "B2022.091" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.091"
+    },
+    "B1041.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.011b"
+    },
+    "LessThan250SquareFoot" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#LessThan250SquareFoot"
+    },
+    "B1033.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.012b"
+    },
+    "D10" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D10"
+    },
+    "D5011.013f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013f"
+    },
+    "D3041.012d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.012d"
+    },
+    "B2022.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.001"
+    },
+    "D3052.013g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013g"
+    },
+    "Restraint" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Restraint"
+    },
+    "D3031.013j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013j"
+    },
+    "GreaterThan2500SquareFoot" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#GreaterThan2500SquareFoot"
+    },
+    "B2023.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.031"
+    },
+    "Parapet" : {
+      "@id" : "https://w3id.org/product#Parapet"
+    },
+    "AboveGround" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround"
+    },
+    "D5092.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.023b"
+    },
+    "B1061.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.001b"
+    },
+    "BatteryCharger" : {
+      "@id" : "https://w3id.org/product#BatteryCharger"
+    },
+    "D5092.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.023a"
+    },
+    "C3011.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.001c"
+    },
+    "B1033.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.012a"
+    },
+    "B1033.063a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.063a"
+    },
+    "D4011.063a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.063a"
+    },
+    "D3031.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023a"
+    },
+    "B1044.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.011"
+    },
+    "B1049.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.002a"
+    },
+    "D3031.013h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013h"
+    },
+    "D3052.013e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013e"
+    },
+    "B1041.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.013a"
+    },
+    "B1052.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.011"
+    },
+    "D3052.013h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013h"
+    },
+    "D3031.022c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022c"
+    },
+    "B" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B"
+    },
+    "B1044.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.002"
+    },
+    "D2021.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.022a"
+    },
+    "D2021.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.021a"
+    },
+    "D3031.022j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022j"
+    },
+    "SuperstructureComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#SuperstructureComponent"
+    },
+    "D5012.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.021c"
+    },
+    "D2031.014b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.014b"
+    },
+    "B1033.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.011a"
+    },
+    "B1033.072a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.072a"
+    },
+    "D3052.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013c"
+    },
+    "D2051.024b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.024b"
+    },
+    "B1044.091" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.091"
+    },
+    "Quantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#Quantity"
+    },
+    "Foundation" : {
+      "@id" : "https://w3id.org/product#Foundation"
+    },
+    "D3041.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.011a"
+    },
+    "D5012.033a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033a"
+    },
+    "D5092" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092"
+    },
+    "B301" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B301"
+    },
+    "D5092.033b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033b"
+    },
+    "B103" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B103"
+    },
+    "D2022.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.012b"
+    },
+    "PipeBracing" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing"
+    },
+    "B2011.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.001a"
+    },
+    "D3031.023h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023h"
+    },
+    "D3041.032b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.032b"
+    },
+    "SuspendedCeiling" : {
+      "@id" : "https://w3id.org/product#SuspendedCeiling"
+    },
+    "D3031.013e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013e"
+    },
+    "D2022.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.022a"
+    },
+    "D5092.023c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.023c"
+    },
+    "CounterFlowHeatExchanger" : {
+      "@id" : "https://w3id.org/product#CounterFlowHeatExchanger"
+    },
+    "D304" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D304"
+    },
+    "B1033.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.011c"
+    },
+    "B2022.04" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.04"
+    },
+    "VariableAirVolumeBox" : {
+      "@id" : "https://w3id.org/product#VariableAirVolumeBox"
+    },
+    "EqualTo0.00Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.00Inches"
+    },
+    "D4011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011"
+    },
+    "VulnerableComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#VulnerableComponent"
+    },
+    "D3031.013d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013d"
+    },
+    "B2011.201b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.201b"
+    },
+    "B1041.063a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.063a"
+    },
+    "Fan" : {
+      "@id" : "https://w3id.org/product#Fan"
+    },
+    "B2022.071" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.071"
+    },
+    "D5011.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.011c"
+    },
+    "D2021.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.023"
+    },
+    "D5012.021d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.021d"
+    },
+    "D3032.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013c"
+    },
+    "B1041.052b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.052b"
+    },
+    "B1035.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.021"
+    },
+    "B1044.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.023"
+    },
+    "D3041.032d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.032d"
+    },
+    "D3041.102b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.102b"
+    },
+    "B1041.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.021a"
+    },
+    "D2051.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.013a"
+    },
+    "C201" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C201"
+    },
+    "RoofCovering" : {
+      "@id" : "https://w3id.org/product#RoofCovering"
+    },
+    "B2023.00" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.00"
+    },
+    "WetSealant" : {
+      "@id" : "https://w3id.org/product#WetSealant"
+    },
+    "D3067" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3067"
+    },
+    "B1031.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.001"
+    },
+    "Coil" : {
+      "@id" : "https://w3id.org/product#Coil"
+    },
+    "B1041.113a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.113a"
+    },
+    "B1071.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.001"
+    },
+    "D3052.013f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013f"
+    },
+    "D2021.0" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.0"
+    },
+    "MaterialObjectStructure" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#MaterialObjectStructure"
+    },
+    "B1033.042b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.042b"
+    },
+    "EqualTo0.13Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.13Inches"
+    },
+    "D3067.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3067.011a"
+    },
+    "B1033.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.022b"
+    },
+    "B1044.071" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.071"
+    },
+    "Point" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#Point"
+    },
+    "D3041.102c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.102c"
+    },
+    "B2023.05" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.05"
+    },
+    "LoadBearing" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#LoadBearing"
+    },
+    "IsInDomesticColdWater" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#IsInDomesticColdWater"
+    },
+    "B3031.002c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.002c"
+    },
+    "D3041.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.021b"
+    },
+    "B1033.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.013b"
+    },
+    "D306" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D306"
+    },
+    "D5011.013j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013j"
+    },
+    "B1041.053a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.053a"
+    },
+    "D5092.032h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032h"
+    },
+    "B2022.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.011"
+    },
+    "Window" : {
+      "@id" : "https://w3id.org/product#Window"
+    },
+    "D4011.074a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.074a"
+    },
+    "Railing" : {
+      "@id" : "https://w3id.org/product#Railing"
+    },
+    "B2022.0" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.0"
+    },
+    "D2022.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.023b"
+    },
+    "D3032.012g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012g"
+    },
+    "D5011.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.011b"
+    },
+    "CoolingTower" : {
+      "@id" : "https://w3id.org/product#CoolingTower"
+    },
+    "D3067.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3067.012b"
+    },
+    "D3041.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.011b"
+    },
+    "B1033.002c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.002c"
+    },
+    "D3031.023j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023j"
+    },
+    "B1041.091a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.091a"
+    },
+    "D3052.013j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013j"
+    },
+    "B1033.101a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.101a"
+    },
+    "B2023.052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.052"
+    },
+    "C3011.002c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.002c"
+    },
+    "D3031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031"
+    },
+    "B1044.113" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.113"
+    },
+    "E2022.124a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.124a"
+    },
+    "D3031.023e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023e"
+    },
+    "B1049" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049"
+    },
+    "AirCompressor" : {
+      "@id" : "https://w3id.org/product#AirCompressor"
+    },
+    "Elevator" : {
+      "@id" : "https://w3id.org/product#Elevator"
+    },
+    "PumpSump" : {
+      "@id" : "https://w3id.org/product#PumpSump"
+    },
+    "D2021.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.021"
+    },
+    "MadeOfPrecastReinforcedConcrete" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete"
+    },
+    "C3032.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.001b"
+    },
+    "B1041.123b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.123b"
+    },
+    "B1041.041b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.041b"
+    },
+    "B1049.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.001a"
+    },
+    "AnnealedGlassPanel" : {
+      "@id" : "https://w3id.org/product#AnnealedGlassPanel"
+    },
+    "D4011.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.022a"
+    },
+    "B2011.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.011a"
+    },
+    "Column" : {
+      "@id" : "https://w3id.org/product#Column"
+    },
+    "D2061" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061"
+    },
+    "CirculationValve" : {
+      "@id" : "https://w3id.org/product#CirculationValve"
+    },
+    "D3032.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012b"
+    },
+    "D5012.023d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023d"
+    },
+    "B1044.061" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.061"
+    },
+    "FragilityCategory" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#FragilityCategory"
+    },
+    "E202" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E202"
+    },
+    "D5012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012"
+    },
+    "B1052.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.013"
+    },
+    "D3031.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.011a"
+    },
+    "B1041.122b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.122b"
+    },
+    "VerticalSideArea" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#VerticalSideArea"
+    },
+    "D3031.021d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.021d"
+    },
+    "B2023.03" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.03"
+    },
+    "B2011.111" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.111"
+    },
+    "B2022.037" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.037"
+    },
+    "B304" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B304"
+    },
+    "B2023.058" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.058"
+    },
+    "C1011.0" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.0"
+    },
+    "C3021.001d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001d"
+    },
+    "D2031.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.023b"
+    },
+    "D3041.022c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.022c"
+    },
+    "B1035.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.001"
+    },
+    "B1049.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.012"
+    },
+    "D4011.072a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.072a"
+    },
+    "B1033.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.013a"
+    },
+    "D5012.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.013c"
+    },
+    "B1071.041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071.041"
+    },
+    "D5011.011d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.011d"
+    },
+    "C2011.021d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.021d"
+    },
+    "B1044.072" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.072"
+    },
+    "D5092.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.013a"
+    },
+    "D5012.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.031a"
+    },
+    "Chair" : {
+      "@id" : "http://dbpedia.org/resource/Chair"
+    },
+    "PipeDiameter" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter"
+    },
+    "B1051.003" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.003"
+    },
+    "C2011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011"
+    },
+    "B1033.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.023b"
+    },
+    "B1041.073a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.073a"
+    },
+    "D3041.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.031b"
+    },
+    "C2011.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.011a"
+    },
+    "B3031.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.002a"
+    },
+    "FlowMeter" : {
+      "@id" : "https://w3id.org/product#FlowMeter"
+    },
+    "B106" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B106"
+    },
+    "E2022.106a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.106a"
+    },
+    "D1014.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D1014.011"
+    },
+    "C3034" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3034"
+    },
+    "D5012.023f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023f"
+    },
+    "D5092.033g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033g"
+    },
+    "B1052.003" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.003"
+    },
+    "B1041.111b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.111b"
+    },
+    "HeatingCoil" : {
+      "@id" : "https://w3id.org/product#HeatingCoil"
+    },
+    "B1049.032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.032"
+    },
+    "OvalDuct" : {
+      "@id" : "https://w3id.org/product#OvalDuct"
+    },
+    "B1049.042a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.042a"
+    },
+    "B1041.061b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.061b"
+    },
+    "D5012.023c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023c"
+    },
+    "D5012.033e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033e"
+    },
+    "B1044.032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.032"
+    },
+    "D2061.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.022a"
+    },
+    "FurnishingComponent" : {
+      "@id" : "https://w3id.org/product#FurnishingComponent"
+    },
+    "D5011.013l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013l"
+    },
+    "D5011.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013a"
+    },
+    "D2061.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.023a"
+    },
+    "F101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#F101"
+    },
+    "Connection" : {
+      "@id" : "https://w3id.org/product#Connection"
+    },
+    "B1031.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.021c"
+    },
+    "B1049.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.031"
+    },
+    "E2022.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.001"
+    },
+    "MadeOfMetal" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal"
+    },
+    "D4011.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.023a"
+    },
+    "Thresholds" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#Thresholds"
+    },
+    "D2022.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.021"
+    },
+    "MadeOfPolymer" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer"
+    },
+    "B1044.093" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.093"
+    },
+    "ExteriorComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#ExteriorComponent"
+    },
+    "B1051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051"
+    },
+    "B1044.111" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.111"
+    },
+    "B3031.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031.001c"
+    },
+    "B1035.052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.052"
+    },
+    "B2023.051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.051"
+    },
+    "B1033.111a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.111a"
+    },
+    "MadeOfStucco" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco"
+    },
+    "D3031.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.021a"
+    },
+    "B1031.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.011a"
+    },
+    "D50" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D50"
+    },
+    "OrganicaMaterial" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#OrganicaMaterial"
+    },
+    "B1033.061b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.061b"
+    },
+    "E2022.112b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.112b"
+    },
+    "B1041.101b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.101b"
+    },
+    "E2022.103a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.103a"
+    },
+    "D2051.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.011b"
+    },
+    "B1033.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.021a"
+    },
+    "B1033.032b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.032b"
+    },
+    "B1052.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.001"
+    },
+    "D3041.002c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.002c"
+    },
+    "B1041.131a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.131a"
+    },
+    "SwitchGear" : {
+      "@id" : "https://w3id.org/product#SwitchGear"
+    },
+    "D3032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032"
+    },
+    "B1041.082a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.082a"
+    },
+    "D2021.024b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.024b"
+    },
+    "D4011.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.024a"
+    },
+    "D3041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041"
+    },
+    "C3011.003b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.003b"
+    },
+    "D5012.033i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033i"
+    },
+    "D3031.023g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023g"
+    },
+    "InorganicNonMetallicMaterial" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#InorganicNonMetallicMaterial"
+    },
+    "D3031.023b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023b"
+    },
+    "B1041.073b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.073b"
+    },
+    "D3052.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.011c"
+    },
+    "D5012.033c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033c"
+    },
+    "D3041.002d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.002d"
+    },
+    "D1014.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D1014.021"
+    },
+    "B1041.042b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.042b"
+    },
+    "Cap" : {
+      "@id" : "https://w3id.org/product#Cap"
+    },
+    "B2011.011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.011"
+    },
+    "D3031.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022a"
+    },
+    "C3032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032"
+    },
+    "Pump" : {
+      "@id" : "https://w3id.org/product#Pump"
+    },
+    "D2061.014b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.014b"
+    },
+    "D3032.012j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012j"
+    },
+    "D4011.071a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.071a"
+    },
+    "B1033.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.023a"
+    },
+    "B1041.103b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.103b"
+    },
+    "D2022.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.012a"
+    },
+    "Infilled" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Infilled"
+    },
+    "B1052.004" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052.004"
+    },
+    "Frame" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Frame"
+    },
+    "BoosterPump" : {
+      "@id" : "https://w3id.org/product#BoosterPump"
+    },
+    "B1041.062a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.062a"
+    },
+    "B1042.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.002a"
+    },
+    "C3021.001e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001e"
+    },
+    "A" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#A"
+    },
+    "B2023.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.001"
+    },
+    "B20" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B20"
+    },
+    "ElectricityDistributionComponent" : {
+      "@id" : "https://w3id.org/product#ElectricityDistributionComponent"
+    },
+    "D2022.023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.023"
+    },
+    "B1033.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.031a"
+    },
+    "Tee" : {
+      "@id" : "https://w3id.org/product#Tee"
+    },
+    "C3032.001d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.001d"
+    },
+    "B1041.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.001b"
+    },
+    "D3032.013l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013l"
+    },
+    "B2022.041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.041"
+    },
+    "MadeOfPlaster" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster"
+    },
+    "C3021.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001b"
+    },
+    "B1033.003c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.003c"
+    },
+    "B1033.053b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.053b"
+    },
+    "C3021.001j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001j"
+    },
+    "D3032.012e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012e"
+    },
+    "B1033.032a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.032a"
+    },
+    "D5092.033i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033i"
+    },
+    "C3011.001d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.001d"
+    },
+    "B1033.051a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.051a"
+    },
+    "D5012.033f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033f"
+    },
+    "C3032.004a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.004a"
+    },
+    "B10" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B10"
+    },
+    "B2023.033" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.033"
+    },
+    "B1041.132b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.132b"
+    },
+    "D3041.032c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.032c"
+    },
+    "B1033.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.001b"
+    },
+    "B1041.092b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.092b"
+    },
+    "B1041.102b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.102b"
+    },
+    "B2023.032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.032"
+    },
+    "C101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C101"
+    },
+    "B1033.052c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.052c"
+    },
+    "D3031.022g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022g"
+    },
+    "D2022.0" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.0"
+    },
+    "D2051.014b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.014b"
+    },
+    "B1035.032" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.032"
+    },
+    "B3011" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3011"
+    },
+    "B2011.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.021b"
+    },
+    "PipeDiameterLessThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterLessThan2.5Inches"
+    },
+    "B1033.073b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.073b"
+    },
+    "D509" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D509"
+    },
+    "Beam" : {
+      "@id" : "https://w3id.org/product#Beam"
+    },
+    "B3041.001" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3041.001"
+    },
+    "D3031.023c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023c"
+    },
+    "NonstructuralComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#NonstructuralComponent"
+    },
+    "Floor" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Floor"
+    },
+    "D2061.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.021a"
+    },
+    "CirculationPump" : {
+      "@id" : "https://w3id.org/product#CirculationPump"
+    },
+    "D3041.012c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.012c"
+    },
+    "B1044.073" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.073"
+    },
+    "B1041.051b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.051b"
+    },
+    "C3027" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3027"
+    },
+    "D3041.011d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.011d"
+    },
+    "B2022.082" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.082"
+    },
+    "D5092.032e" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032e"
+    },
+    "C2011.03" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.03"
+    },
+    "D2051.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2051.012a"
+    },
+    "DuctTransition" : {
+      "@id" : "https://w3id.org/product#DuctTransition"
+    },
+    "D5011.013k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013k"
+    },
+    "B1041.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.022b"
+    },
+    "Chimney" : {
+      "@id" : "https://w3id.org/product#Chimney"
+    },
+    "C3011.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3011.001a"
+    },
+    "D5011.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013c"
+    },
+    "B1041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041"
+    },
+    "CurtainWall" : {
+      "@id" : "https://w3id.org/product#CurtainWall"
+    },
+    "Internal" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Internal"
+    },
+    "D5012.023a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023a"
+    },
+    "B1042.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1042.011b"
+    },
+    "BeamToColumnConnection" : {
+      "@id" : "https://w3id.org/product#BeamToColumnConnection"
+    },
+    "Wall" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Wall"
+    },
+    "B1035.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.002"
+    },
+    "B1041.083a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.083a"
+    },
+    "C1011.00" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C1011.00"
+    },
+    "HasMidSeismicDesignCategory" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#HasMidSeismicDesignCategory"
+    },
+    "B1033.061c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.061c"
+    },
+    "B30" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B30"
+    },
+    "ColumnSplice" : {
+      "@id" : "https://w3id.org/product#ColumnSplice"
+    },
+    "B1044.101" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.101"
+    },
+    "D4011.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.031a"
+    },
+    "RoundDuct" : {
+      "@id" : "https://w3id.org/product#RoundDuct"
+    },
+    "MadeOfGlass" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGlass"
+    },
+    "D3041.002a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.002a"
+    },
+    "B1061" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061"
+    },
+    "Between1000And2500SquareFoot" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#Between1000And2500SquareFoot"
+    },
+    "D2031.024b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.024b"
+    },
+    "MadeOfReinforcedConcrete" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete"
+    },
+    "D501" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D501"
+    },
+    "B1033.071a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.071a"
+    },
+    "B1033.043c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.043c"
+    },
+    "E2022.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.022"
+    },
+    "Fitting" : {
+      "@id" : "https://w3id.org/product#Fitting"
+    },
+    "C3032.004d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.004d"
+    },
+    "B3031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3031"
+    },
+    "D2022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022"
+    },
+    "EqualTo0.43Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#EqualTo0.43Inches"
+    },
+    "B1033.041b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.041b"
+    },
+    "B1051.004" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1051.004"
+    },
+    "B2022.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.022"
+    },
+    "B1041.133a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.133a"
+    },
+    "D5012.023g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.023g"
+    },
+    "Chiller" : {
+      "@id" : "https://w3id.org/product#Chiller"
+    },
+    "B2023" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023"
+    },
+    "F1012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#F1012"
+    },
+    "B1033.072c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.072c"
+    },
+    "B1041.081b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.081b"
+    },
+    "D4011.034a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.034a"
+    },
+    "D3032.012f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.012f"
+    },
+    "B1041.102a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.102a"
+    },
+    "B1035.022" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.022"
+    },
+    "B1033.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.013c"
+    },
+    "D5092.021a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.021a"
+    },
+    "D5092.032k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032k"
+    },
+    "D5092.033k" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033k"
+    },
+    "B2011.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.021"
+    },
+    "Table" : {
+      "@id" : "https://w3id.org/product#Table"
+    },
+    "B1035.061b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.061b"
+    },
+    "InteriorComponent" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#InteriorComponent"
+    },
+    "B1041.093a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.093a"
+    },
+    "Slab" : {
+      "@id" : "https://w3id.org/product#Slab"
+    },
+    "EnergyMeter" : {
+      "@id" : "https://w3id.org/product#EnergyMeter"
+    },
+    "E2022.102b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.102b"
+    },
+    "D3041.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.001a"
+    },
+    "B2022.07" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.07"
+    },
+    "B1052" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1052"
+    },
+    "C3034.002" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3034.002"
+    },
+    "D5092.013c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.013c"
+    },
+    "D2021.012a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.012a"
+    },
+    "C3032.004c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.004c"
+    },
+    "C3032.003a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.003a"
+    },
+    "B1033.021b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.021b"
+    },
+    "D3031.022h" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022h"
+    },
+    "D5012.033b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.033b"
+    },
+    "D3041.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.012b"
+    },
+    "E2022.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.012"
+    },
+    "B1035.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.031"
+    },
+    "D5092.033l" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033l"
+    },
+    "PipeDiameterGreaterThan2.5Inches" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#PipeDiameterGreaterThan2.5Inches"
+    },
+    "Manifold" : {
+      "@id" : "https://w3id.org/product#Manifold"
+    },
+    "D3032.013j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013j"
+    },
+    "RectangularDuct" : {
+      "@id" : "https://w3id.org/product#RectangularDuct"
+    },
+    "B2022.035" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.035"
+    },
+    "D3032.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013b"
+    },
+    "C3021.001m" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001m"
+    },
+    "B1033.101b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.101b"
+    },
+    "Panel" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#Panel"
+    },
+    "B1041.072b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.072b"
+    },
+    "B1035.061a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.061a"
+    },
+    "D3041.031a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.031a"
+    },
+    "AirHandlingUnit" : {
+      "@id" : "https://w3id.org/product#AirHandlingUnit"
+    },
+    "B1041.062b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.062b"
+    },
+    "WallWithoutHoldowns" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithoutHoldowns"
+    },
+    "D3031.022f" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.022f"
+    },
+    "Valve" : {
+      "@id" : "http://dbpedia.org/resource/Valve"
+    },
+    "D2021.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.011b"
+    },
+    "D3041.101a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.101a"
+    },
+    "D2021.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.011a"
+    },
+    "D5011.013d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.013d"
+    },
+    "D3041.102a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.102a"
+    },
+    "CommissioningValve" : {
+      "@id" : "https://w3id.org/product#CommissioningValve"
+    },
+    "LateralBrace" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#LateralBrace"
+    },
+    "C2011.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.011b"
+    },
+    "B1044.081" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.081"
+    },
+    "C3032.003b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.003b"
+    },
+    "B1033.012c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.012c"
+    },
+    "B3011.013" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B3011.013"
+    },
+    "D3052.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013a"
+    },
+    "D5092.033j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.033j"
+    },
+    "D5092.032j" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032j"
+    },
+    "B1041.041a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.041a"
+    },
+    "B1041.033b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.033b"
+    },
+    "Area" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#Area"
+    },
+    "B1033.051b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.051b"
+    },
+    "E2022.020" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.020"
+    },
+    "C302" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C302"
+    },
+    "B1041.091b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.091b"
+    },
+    "E2022.021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.021"
+    },
+    "B2022.031" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.031"
+    },
+    "D2022.013a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2022.013a"
+    },
+    "B2022.051" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.051"
+    },
+    "D2031.024a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.024a"
+    },
+    "D2021.014b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.014b"
+    },
+    "B2022.054" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.054"
+    },
+    "B1033.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.021c"
+    },
+    "B1041.133b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.133b"
+    },
+    "C3021.001c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3021.001c"
+    },
+    "SeismicDesignCategory" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#SeismicDesignCategory"
+    },
+    "D5012.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5012.031b"
+    },
+    "B2022.038" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.038"
+    },
+    "GlassPanel" : {
+      "@id" : "https://w3id.org/product#GlassPanel"
+    },
+    "D" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D"
+    },
+    "D2021.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.012"
+    },
+    "D3031.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012b"
+    },
+    "B1041.012b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.012b"
+    },
+    "D3041.021c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3041.021c"
+    },
+    "D5011.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5011.011a"
+    },
+    "B2011.201a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.201a"
+    },
+    "B1035.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.012"
+    },
+    "B1041.011a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.011a"
+    },
+    "B2011.2" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.2"
+    },
+    "B2023.041" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.041"
+    },
+    "D2021.02" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021.02"
+    },
+    "C3032.004" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.004"
+    },
+    "D3031.012i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.012i"
+    },
+    "D3032.013g" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3032.013g"
+    },
+    "D2021" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2021"
+    },
+    "HasLowSeismicDesignCategory" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#HasLowSeismicDesignCategory"
+    },
+    "CompositeMaterial" : {
+      "@id" : "https://w3id.org/digitalconstruction/0.5/Materials/Subset#CompositeMaterial"
+    },
+    "D3052.013d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3052.013d"
+    },
+    "B1031.011c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1031.011c"
+    },
+    "B1049.003a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.003a"
+    },
+    "D2031.022a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.022a"
+    },
+    "LaminatedGlassPanel" : {
+      "@id" : "https://w3id.org/product#LaminatedGlassPanel"
+    },
+    "D5092.032d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.032d"
+    },
+    "B1071" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1071"
+    },
+    "C2011.031b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C2011.031b"
+    },
+    "C3032.004b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.004b"
+    },
+    "Ramp" : {
+      "@id" : "https://w3id.org/product#Ramp"
+    },
+    "D2031.022b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2031.022b"
+    },
+    "B1041.083b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.083b"
+    },
+    "External" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#External"
+    },
+    "HighSeismicity" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeismicDesign#HighSeismicity"
+    },
+    "B1033.003b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.003b"
+    },
+    "B1044.112" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.112"
+    },
+    "D3031.013b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.013b"
+    },
+    "B1061.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1061.011b"
+    },
+    "CoolingCoil" : {
+      "@id" : "https://w3id.org/product#CoolingCoil"
+    },
+    "E20" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E20"
+    },
+    "IsInHeating" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#IsInHeating"
+    },
+    "B2011.1" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.1"
+    },
+    "D2061.011b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D2061.011b"
+    },
+    "B2022.033" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2022.033"
+    },
+    "PrefixedAre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/subset#PrefixedAre"
+    },
+    "B1035.062a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1035.062a"
+    },
+    "B2011.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2011.001b"
+    },
+    "C3032.001a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#C3032.001a"
+    },
+    "StairStringer" : {
+      "@id" : "https://w3id.org/product#StairStringer"
+    },
+    "D1014.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D1014.012"
+    },
+    "Heater" : {
+      "@id" : "https://w3id.org/product#Heater"
+    },
+    "B1041.113b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1041.113b"
+    },
+    "B2023.055" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B2023.055"
+    },
+    "E2022.104b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#E2022.104b"
+    },
+    "B1033.072b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.072b"
+    },
+    "DieselGenerator" : {
+      "@id" : "https://w3id.org/product#DieselGenerator"
+    },
+    "B1049.001b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1049.001b"
+    },
+    "D5092.031d" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.031d"
+    },
+    "D3031.023i" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D3031.023i"
+    },
+    "B1044.012" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1044.012"
+    },
+    "B1033.062b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.062b"
+    },
+    "B1033.063b" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#B1033.063b"
+    },
+    "D4011.053a" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D4011.053a"
+    },
+    "ElectricityEmergencyComponent" : {
+      "@id" : "https://w3id.org/product#ElectricityEmergencyComponent"
+    },
+    "D202" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D202"
+    },
+    "MadeOfConcrete" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete"
+    },
+    "HasHighSeismicDesignCategory" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#HasHighSeismicDesignCategory"
+    },
+    "D5092.031c" : {
+      "@id" : "https://w3id.org/utoronto/ontologies/SeisFront#D5092.031c"
+    }
+  }
+}

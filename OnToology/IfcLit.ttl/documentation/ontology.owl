@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/utoronto/ontologies/IfcLit#"
+     xml:base="https://w3id.org/utoronto/ontologies/IfcLit"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/utoronto/ontologies/IfcLit">
+        <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset"/>
+        <dc:creator>Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)</dc:creator>
+        <rdfs:label xml:lang="en">Light version of ifcOWL Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties -->
+
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties">
+        <owl:inverseOf rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial">
+        <owl:inverseOf rdf:resource="https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasProperty">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasType">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject">
+        <rdfs:label>IsDefinedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#isInGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#isInGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasTag -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasTag">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement"/>
+                    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume">
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDistributionSystemEnum"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcGroup"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcMaterialDefinition"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObject"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcObjectDefinition"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalComplexQuantity"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalQuantity"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPhysicalSimpleQuantity"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertyAbstraction"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPropertySingleValue"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityArea"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityLength"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityVolume"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcRoot"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeObject"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct -->
+
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTypeProduct"/>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.5/Materials/Subset#Material"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
