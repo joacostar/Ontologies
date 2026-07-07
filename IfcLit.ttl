@@ -11,80 +11,82 @@
 
 <https://w3id.org/utoronto/ontologies/IfcLit> rdf:type owl:Ontology ;
                                                owl:imports <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL> ,
-                                                           <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+                                                           <https://w3id.org/digitalconstruction/0.5/Materials/Subset> ;
+                                               <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                               rdfs:label "Light version of ifcOWL Ontology"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#relatedObjects_IfcRelDefinesByProperties
-ifc:relatedObjects_IfcRelDefinesByProperties owl:inverseOf :isDefinedBy_IfcObject .
+ifc:relatedObjects_IfcRelDefinesByProperties owl:inverseOf ifcLit:isDefinedBy_IfcObject .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterial
-:hasMaterial rdf:type owl:ObjectProperty ;
-             owl:inverseOf :isMaterialOf ;
-             rdfs:domain ifc:IfcObjectDefinition ;
-             rdfs:range ifc:IfcMaterialDefinition .
+ifcLit:hasMaterial rdf:type owl:ObjectProperty ;
+                   owl:inverseOf ifcLit:isMaterialOf ;
+                   rdfs:domain ifc:IfcObjectDefinition ;
+                   rdfs:range ifc:IfcMaterialDefinition .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasMaterialReference
-:hasMaterialReference rdf:type owl:ObjectProperty ;
-                      rdfs:domain ifc:IfcMaterialDefinition ;
-                      rdfs:range dicm:Material .
+ifcLit:hasMaterialReference rdf:type owl:ObjectProperty ;
+                            rdfs:domain ifc:IfcMaterialDefinition ;
+                            rdfs:range dicm:Material .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalComplexQuantity
-:hasPhysicalComplexQuantity rdf:type owl:ObjectProperty ;
-                            rdfs:domain ifc:IfcRoot ;
-                            rdfs:range ifc:IfcPhysicalComplexQuantity .
+ifcLit:hasPhysicalComplexQuantity rdf:type owl:ObjectProperty ;
+                                  rdfs:domain ifc:IfcRoot ;
+                                  rdfs:range ifc:IfcPhysicalComplexQuantity .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasPhysicalSimpleQuantity
-:hasPhysicalSimpleQuantity rdf:type owl:ObjectProperty ;
-                           rdfs:domain ifc:IfcRoot ;
-                           rdfs:range ifc:IfcPhysicalSimpleQuantity .
+ifcLit:hasPhysicalSimpleQuantity rdf:type owl:ObjectProperty ;
+                                 rdfs:domain ifc:IfcRoot ;
+                                 rdfs:range ifc:IfcPhysicalSimpleQuantity .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasProperty
-:hasProperty rdf:type owl:ObjectProperty ;
-             rdfs:domain ifc:IfcRoot ;
-             rdfs:range ifc:IfcPropertyAbstraction .
+ifcLit:hasProperty rdf:type owl:ObjectProperty ;
+                   rdfs:domain ifc:IfcRoot ;
+                   rdfs:range ifc:IfcPropertyAbstraction .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasPropertySingleValue
-:hasPropertySingleValue rdf:type owl:ObjectProperty ;
-                        rdfs:domain ifc:IfcRoot ;
-                        rdfs:range ifc:IfcPropertySingleValue .
+ifcLit:hasPropertySingleValue rdf:type owl:ObjectProperty ;
+                              rdfs:domain ifc:IfcRoot ;
+                              rdfs:range ifc:IfcPropertySingleValue .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasType
-:hasType rdf:type owl:ObjectProperty ;
-         rdfs:domain ifc:IfcObject ;
-         rdfs:range ifc:IfcTypeObject .
+ifcLit:hasType rdf:type owl:ObjectProperty ;
+               rdfs:domain ifc:IfcObject ;
+               rdfs:range ifc:IfcTypeObject .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#isDefinedBy_IfcObject
-:isDefinedBy_IfcObject rdf:type owl:ObjectProperty ;
-                       rdfs:label "IsDefinedBy" .
+ifcLit:isDefinedBy_IfcObject rdf:type owl:ObjectProperty ;
+                             rdfs:label "IsDefinedBy" .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#isInDistributionSystemPredefinedType
-:isInDistributionSystemPredefinedType rdf:type owl:ObjectProperty ,
-                                               owl:IrreflexiveProperty ;
-                                      rdfs:domain ifc:IfcObjectDefinition ;
-                                      rdfs:range ifc:IfcDistributionSystemEnum .
+ifcLit:isInDistributionSystemPredefinedType rdf:type owl:ObjectProperty ,
+                                                     owl:IrreflexiveProperty ;
+                                            rdfs:domain ifc:IfcObjectDefinition ;
+                                            rdfs:range ifc:IfcDistributionSystemEnum .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#isInGroup
-:isInGroup rdf:type owl:ObjectProperty ,
-                    owl:IrreflexiveProperty ;
-           rdfs:domain ifc:IfcObjectDefinition ;
-           rdfs:range ifc:IfcGroup .
+ifcLit:isInGroup rdf:type owl:ObjectProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain ifc:IfcObjectDefinition ;
+                 rdfs:range ifc:IfcGroup .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#isMaterialOf
-:isMaterialOf rdf:type owl:ObjectProperty .
+ifcLit:isMaterialOf rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -92,59 +94,59 @@ ifc:relatedObjects_IfcRelDefinesByProperties owl:inverseOf :isDefinedBy_IfcObjec
 #################################################################
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasAreaValue_IfcQuantityArea
-:hasAreaValue_IfcQuantityArea rdf:type owl:DatatypeProperty ;
-                              rdfs:domain ifc:IfcQuantityArea ;
-                              rdfs:range xsd:double .
+ifcLit:hasAreaValue_IfcQuantityArea rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain ifc:IfcQuantityArea ;
+                                    rdfs:range xsd:double .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasGlobalId
-:hasGlobalId rdf:type owl:DatatypeProperty ;
-             rdfs:domain ifc:IfcRoot ;
-             rdfs:range xsd:string .
+ifcLit:hasGlobalId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ifc:IfcRoot ;
+                   rdfs:range xsd:string .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasLengthValue_IfcQuantityLength
-:hasLengthValue_IfcQuantityLength rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain ifc:IfcQuantityLength ;
-                                  rdfs:range xsd:double .
+ifcLit:hasLengthValue_IfcQuantityLength rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain ifc:IfcQuantityLength ;
+                                        rdfs:range xsd:double .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasName
-:hasName rdf:type owl:DatatypeProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( ifc:IfcPhysicalQuantity
-                                     ifc:IfcPropertySingleValue
-                                     ifc:IfcRoot
-                                   )
-                     ] ;
-         rdfs:range xsd:string .
+ifcLit:hasName rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( ifc:IfcPhysicalQuantity
+                                           ifc:IfcPropertySingleValue
+                                           ifc:IfcRoot
+                                         )
+                           ] ;
+               rdfs:range xsd:string .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasObjectType_IfcObject
-:hasObjectType_IfcObject rdf:type owl:DatatypeProperty ;
-                         rdfs:domain ifc:IfcObject ;
-                         rdfs:range xsd:string .
+ifcLit:hasObjectType_IfcObject rdf:type owl:DatatypeProperty ;
+                               rdfs:domain ifc:IfcObject ;
+                               rdfs:range xsd:string .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasTag
-:hasTag rdf:type owl:DatatypeProperty ;
-        rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( ifc:IfcElement
-                                    ifc:IfcTypeProduct
-                                  )
-                    ] ;
-        rdfs:range xsd:string .
+ifcLit:hasTag rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( ifc:IfcElement
+                                          ifc:IfcTypeProduct
+                                        )
+                          ] ;
+              rdfs:range xsd:string .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasValue_IfcPropertySingleValue
-:hasValue_IfcPropertySingleValue rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain ifc:IfcPropertySingleValue .
+ifcLit:hasValue_IfcPropertySingleValue rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain ifc:IfcPropertySingleValue .
 
 
 ###  https://w3id.org/utoronto/ontologies/IfcLit#hasVolumeValue_IfcQuantityVolume
-:hasVolumeValue_IfcQuantityVolume rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain ifc:IfcQuantityVolume ;
-                                  rdfs:range xsd:double .
+ifcLit:hasVolumeValue_IfcQuantityVolume rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain ifc:IfcQuantityVolume ;
+                                        rdfs:range xsd:double .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -5,10 +5,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/utoronto/ontologies/SeismicDesign> .
+@base <https://w3id.org/utoronto/ontologies/SeismicDesign#> .
 
 <https://w3id.org/utoronto/ontologies/SeismicDesign> rdf:type owl:Ontology ;
-                                                                      owl:imports <https://w3id.org/utoronto/ontologies/BuildingComponents> .
+                                                      owl:imports <https://w3id.org/utoronto/ontologies/BuildingComponents> ;
+                                                      <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                                      rdfs:label "Ontology of Seismic Design"@en .
 
 #################################################################
 #    Object Properties

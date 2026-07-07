@@ -15,7 +15,9 @@
                                                                        <https://w3id.org/digitalconstruction/0.5/Materials/Subset> ,
                                                                        prod:BuildingElements ,
                                                                        prod:Furnishing ,
-                                                                       prod:MEP .
+                                                                       prod:MEP ;
+                                                           <http://purl.org/dc/elements/1.1/creator> "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                                           rdfs:label "Ontology of Building Components"@en .
 
 #################################################################
 #    Object Properties

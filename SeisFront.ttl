@@ -16,9 +16,11 @@
 
 <https://w3id.org/utoronto/ontologies/SeisFront> rdf:type owl:Ontology ;
                                                   owl:imports <http://www.ontology-of-units-of-measure.org/resource/om-2/subset> ,
+                                                              <https://w3id.org/digitalconstruction/0.5/Materials/Subset> ,
                                                               <https://w3id.org/utoronto/ontologies/BuildingComponents> ,
-                                                              <https://w3id.org/utoronto/ontologies/SeismicDesign> ,
-                                                              <https://w3id.org/digitalconstruction/0.5/Materials/Subset> .
+                                                              <https://w3id.org/utoronto/ontologies/SeismicDesign> ;
+                                                  dc:creator "Joaquín Acosta Reveco (j.acosta@mail.utoronto.ca)" ;
+                                                  rdfs:label "Seismic Fragility Ontology"@en .
 
 #################################################################
 #    Annotation properties
@@ -32,28 +34,28 @@ dc:description rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasAttribute
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasAttribute
 bc:hasAttribute rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasComponent
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasComponent
 bc:hasComponent rdf:type owl:ObjectProperty ;
                 rdfs:range bc:BuildingComponent .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasInfill
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasInfill
 bc:hasInfill rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasSealant
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasSealant
 bc:hasSealant rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasSupport
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasSupport
 bc:hasSupport rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#isInSystemOfType
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isInSystemOfType
 bc:isInSystemOfType rdf:type owl:ObjectProperty .
 
 
@@ -73,149 +75,17 @@ sfront:isInWeatherType rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#hasAspectRatio
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#hasAspectRatio
 bc:hasAspectRatio rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#isMonolithic
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#isMonolithic
 bc:isMonolithic rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#AboveGround
-bc:AboveGround rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#AirDistributionComponent
-bc:AirDistributionComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#BelowGround
-bc:BelowGround rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#BuildingComponent
-bc:BuildingComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Clearance
-bc:Clearance rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Ducting
-bc:Ducting rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#ExteriorComponent
-bc:ExteriorComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#External
-bc:External rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#InteriorComponent
-bc:InteriorComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfColdFormedSteel
-bc:MadeOfColdFormedSteel rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfConcrete
-bc:MadeOfConcrete rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfCopper
-bc:MadeOfCopper rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfGypsum
-bc:MadeOfGypsum rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfMasonry
-bc:MadeOfMasonry rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfMetal
-bc:MadeOfMetal rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPlaster
-bc:MadeOfPlaster rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPolymer
-bc:MadeOfPolymer rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfPrecastReinforcedConcrete
-bc:MadeOfPrecastReinforcedConcrete rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfReinforcedConcrete
-bc:MadeOfReinforcedConcrete rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfSteel
-bc:MadeOfSteel rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfStucco
-bc:MadeOfStucco rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MadeOfWood
-bc:MadeOfWood rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#MepComponent
-bc:MepComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#NonstructuralComponent
-bc:NonstructuralComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#PipeBracing
-bc:PipeBracing rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#PipeDiameter
-bc:PipeDiameter rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#StructuralComponent
-bc:StructuralComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#SupportComponent
-bc:SupportComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Thickness
-bc:Thickness rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#WallWithHoldowns
-bc:WallWithHoldowns rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#WallWithoutHoldowns
-bc:WallWithoutHoldowns rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#WaterDistributionComponent
-bc:WaterDistributionComponent rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#X-Bracing
-bc:X-Bracing rdf:type owl:Class .
-
 
 ###  https://w3id.org/product#CurtainWall
 prod:CurtainWall owl:disjointWith prod:Window .
@@ -225,11 +95,143 @@ prod:CurtainWall owl:disjointWith prod:Window .
 prod:StorageRack owl:equivalentClass sfront:F1012.001 .
 
 
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AboveGround
+bc:AboveGround rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#AirDistributionComponent
+bc:AirDistributionComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BelowGround
+bc:BelowGround rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#BuildingComponent
+bc:BuildingComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Clearance
+bc:Clearance rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Ducting
+bc:Ducting rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ExteriorComponent
+bc:ExteriorComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#External
+bc:External rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#InteriorComponent
+bc:InteriorComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfColdFormedSteel
+bc:MadeOfColdFormedSteel rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfConcrete
+bc:MadeOfConcrete rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfCopper
+bc:MadeOfCopper rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfGypsum
+bc:MadeOfGypsum rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMasonry
+bc:MadeOfMasonry rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfMetal
+bc:MadeOfMetal rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPlaster
+bc:MadeOfPlaster rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPolymer
+bc:MadeOfPolymer rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfPrecastReinforcedConcrete
+bc:MadeOfPrecastReinforcedConcrete rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfReinforcedConcrete
+bc:MadeOfReinforcedConcrete rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfSteel
+bc:MadeOfSteel rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfStucco
+bc:MadeOfStucco rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MadeOfWood
+bc:MadeOfWood rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#MepComponent
+bc:MepComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#NonstructuralComponent
+bc:NonstructuralComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeBracing
+bc:PipeBracing rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#PipeDiameter
+bc:PipeDiameter rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#StructuralComponent
+bc:StructuralComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#SupportComponent
+bc:SupportComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Thickness
+bc:Thickness rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithHoldowns
+bc:WallWithHoldowns rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WallWithoutHoldowns
+bc:WallWithoutHoldowns rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#WaterDistributionComponent
+bc:WaterDistributionComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#X-Bracing
+bc:X-Bracing rdf:type owl:Class .
+
+
 ###  https://w3id.org/utoronto/ontologies/SeisFront#A
 sfront:A rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Class ;
-                               owl:unionOf ( bc:BelowGround
-                                             prod:Foundation
+                               owl:unionOf ( prod:Foundation
+                                             bc:BelowGround
                                            )
                              ] ;
          rdfs:subClassOf sfront:FragilityCategory ;
@@ -3822,8 +3824,8 @@ sfront:B3011.014 rdf:type owl:Class ;
 
 ###  https://w3id.org/utoronto/ontologies/SeisFront#B303
 sfront:B303 rdf:type owl:Class ;
-            owl:equivalentClass [ owl:intersectionOf ( bc:MadeOfMasonry
-                                                       prod:Chimney
+            owl:equivalentClass [ owl:intersectionOf ( prod:Chimney
+                                                       bc:MadeOfMasonry
                                                        sfront:B30
                                                      ) ;
                                   rdf:type owl:Class
@@ -3887,8 +3889,8 @@ sfront:B3031.002c rdf:type owl:Class ;
 
 ###  https://w3id.org/utoronto/ontologies/SeisFront#B304
 sfront:B304 rdf:type owl:Class ;
-            owl:equivalentClass [ owl:intersectionOf ( bc:MadeOfMasonry
-                                                       prod:Parapet
+            owl:equivalentClass [ owl:intersectionOf ( prod:Parapet
+                                                       bc:MadeOfMasonry
                                                        sfront:B30
                                                      ) ;
                                   rdf:type owl:Class
@@ -4013,8 +4015,8 @@ sfront:C10 rdf:type owl:Class ;
 
 ###  https://w3id.org/utoronto/ontologies/SeisFront#C101
 sfront:C101 rdf:type owl:Class ;
-            owl:equivalentClass [ owl:intersectionOf ( bc:NonstructuralComponent
-                                                       prod:Wall
+            owl:equivalentClass [ owl:intersectionOf ( prod:Wall
+                                                       bc:NonstructuralComponent
                                                        sfront:C10
                                                      ) ;
                                   rdf:type owl:Class
@@ -4285,16 +4287,16 @@ sfront:C2011.03 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( sfront:C2011
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty bc:hasComponent ;
-                                                             owl:someValuesFrom [ owl:intersectionOf ( bc:MadeOfReinforcedConcrete
-                                                                                                       prod:StairThread
+                                                             owl:someValuesFrom [ owl:intersectionOf ( prod:StairStringer
+                                                                                                       bc:MadeOfSteel
                                                                                                      ) ;
                                                                                   rdf:type owl:Class
                                                                                 ]
                                                            ]
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty bc:hasComponent ;
-                                                             owl:someValuesFrom [ owl:intersectionOf ( bc:MadeOfSteel
-                                                                                                       prod:StairStringer
+                                                             owl:someValuesFrom [ owl:intersectionOf ( prod:StairThread
+                                                                                                       bc:MadeOfReinforcedConcrete
                                                                                                      ) ;
                                                                                   rdf:type owl:Class
                                                                                 ]
@@ -6839,11 +6841,11 @@ sfront:D304 rdf:type owl:Class ;
 sfront:D3041 rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( sfront:D304
                                                         [ rdf:type owl:Class ;
-                                                          owl:unionOf ( bc:Ducting
-                                                                        prod:Difusser
+                                                          owl:unionOf ( prod:Difusser
                                                                         prod:HVACFan
                                                                         prod:HVACFanInLine
                                                                         prod:VariableAirVolumeBox
+                                                                        bc:Ducting
                                                                       )
                                                         ]
                                                       ) ;
@@ -7332,9 +7334,9 @@ sfront:D40 rdf:type owl:Class ;
 sfront:D401 rdf:type owl:Class ;
             owl:equivalentClass [ owl:intersectionOf ( sfront:D40
                                                        [ rdf:type owl:Class ;
-                                                         owl:unionOf ( bc:Piping
-                                                                       prod:FireSprinklerDrop
+                                                         owl:unionOf ( prod:FireSprinklerDrop
                                                                        prod:Pump
+                                                                       bc:Piping
                                                                      )
                                                        ]
                                                      ) ;
@@ -7348,8 +7350,8 @@ sfront:D401 rdf:type owl:Class ;
 sfront:D4011 rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( sfront:D401
                                                         [ rdf:type owl:Class ;
-                                                          owl:unionOf ( bc:Piping
-                                                                        prod:FireSprinklerDrop
+                                                          owl:unionOf ( prod:FireSprinklerDrop
+                                                                        bc:Piping
                                                                       )
                                                         ]
                                                       ) ;
@@ -8814,47 +8816,47 @@ sfront:WeatherType rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#ColdWater
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#ColdWater
 bc:ColdWater rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Conveying
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Conveying
 bc:Conveying rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#CoolingWater
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#CoolingWater
 bc:CoolingWater rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Electrical
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Electrical
 bc:Electrical rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Exhaust
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Exhaust
 bc:Exhaust rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#FireProtection
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#FireProtection
 bc:FireProtection rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#HVAC
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HVAC
 bc:HVAC rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Heating
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Heating
 bc:Heating rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#HotWater
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#HotWater
 bc:HotWater rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Steam
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Steam
 bc:Steam rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/joaquin/ontologies/2024/10/BuildingComponents#Waste
+###  https://w3id.org/utoronto/ontologies/BuildingComponents#Waste
 bc:Waste rdf:type owl:NamedIndividual .
 
 
