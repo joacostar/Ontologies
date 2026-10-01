@@ -1,5 +1,8 @@
 <h2 id="desc" class="list">Light version of ifcOWL Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+<span class="markdown">Design: it imports ifcOWL for IFC4 and the Digital Construction Building Material Ontology. It keeps ifcOWL's classes, so the data still follows the IFC structure, and it defines new shortcut properties.
+Object properties link elements to related resources directly. Examples include ifcLit:hasProperty (element to property value), ifcLit:hasMaterial, ifcLit:hasMaterialReference and ifcLit:isInDistributionSystemPredefinedType.
+Datatype properties such as ifcLit:hasName and ifcLit:hasValue attach literals directly, so wrapper classes like ifc:IfcIdentifier and the numeric measure wrappers are no longer needed.
+Formal basis: each composite property can be written as an OWL property chain, e.g. ifcLit:hasProperty ≡ ifc:hasProperties ∘ ifc:relatingPropertyDefinition ∘ ifc:isDefinedBy.
 
 </span>
